@@ -31,7 +31,7 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 866,
+      "bytes": 777,
       "mode": "100644",
       "path": "Makefile",
       "rewrites": [
@@ -43,14 +43,14 @@
         },
         {
           "expected_count": 1,
-          "new": ".PHONY: all check evidence warnings clean distclean",
-          "old": ".PHONY: all check evidence lint warnings clean distclean",
+          "new": ".PHONY: all check evidence manuscript warnings clean distclean",
+          "old": ".PHONY: all check evidence lint manuscript warnings clean distclean",
           "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
         },
         {
           "expected_count": 1,
-          "new": "all: golden_companion_reconstruction.pdf\n\ncheck: evidence golden_companion_reconstruction.pdf warnings",
-          "old": "all: lint golden_companion_reconstruction.pdf\n\ncheck: evidence lint golden_companion_reconstruction.pdf warnings",
+          "new": "all: manuscript\n\ncheck: evidence manuscript warnings",
+          "old": "all: lint manuscript\n\ncheck: evidence lint manuscript warnings",
           "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
         },
         {
@@ -61,21 +61,21 @@
         },
         {
           "expected_count": 1,
-          "new": "golden_companion_reconstruction.pdf: $(SOURCE)\n",
-          "old": "golden_companion_reconstruction.pdf: $(SOURCE)\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n",
+          "new": "manuscript: $(SOURCE)\n",
+          "old": "manuscript: $(SOURCE)\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n",
           "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
         }
       ],
       "role": "support",
-      "sha256": "cc2d3bfeb54618fa98dc5c1a5f5229602a90beea15502d6c7a85616e3cf60bf6",
-      "source_blob": "58711b857d7d30ea91949e7d5a56f8300b7494c6"
+      "sha256": "90c6966b7ce41338c51354d39cba6de2c042cc4af6c176a15d4a4a62dd2af012",
+      "source_blob": "acdf2462712d1c45cfcf072b0cb79bc1494668bb"
     },
     {
       "bytes": 312,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "7dff3351041295410da2375feadbfe2379faf732ff0589d9b254542ad871609d",
+      "sha256": "461cac673eb3e73020b5bc534bf1eeb9732d05396a55f4c651264db11c3fdf74",
       "source_blob": null
     },
     {
@@ -279,7 +279,7 @@
   "paper_registry_sha256": "d49a06e2b25e828827166586dfd3aad92342119e4e38decb1a695c5ad558003c",
   "release_output_policy": "legacy-unspecified",
   "repository": "golden-companion-correspondence",
-  "repository_map_sha256": "849a63f99382c1276f2ffa0fe4728923a82851640b6ed61fe71a5ebed7bdb0ce",
+  "repository_map_sha256": "3837472b201ebe328ee04be49f3a87f4e080d1ca771a5d95081a287017af611c",
   "schema_version": 1,
-  "source_commit": "31303963a214b06bfababdb8281bf15a7cc9a2fc"
+  "source_commit": "681e47b26bc86e84ea69c78d16bd168ceda598cc"
 }

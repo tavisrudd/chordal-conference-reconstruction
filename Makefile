@@ -6,19 +6,19 @@ LATEXMK ?= $(TEXSHELL) latexmk
 LATEXMK_FLAGS ?= -xelatex -interaction=nonstopmode -halt-on-error
 SOURCE := golden_companion_reconstruction.tex
 
-.PHONY: all check evidence warnings clean distclean
+.PHONY: all check evidence manuscript warnings clean distclean
 
-all: golden_companion_reconstruction.pdf
+all: manuscript
 
-check: evidence golden_companion_reconstruction.pdf warnings
+check: evidence manuscript warnings
 
 evidence:
 	python3 verification/evidence/paper_ii_chordal_axis.py --check
 
-golden_companion_reconstruction.pdf: $(SOURCE)
+manuscript: $(SOURCE)
 	$(LATEXMK) $(LATEXMK_FLAGS) $(SOURCE)
 
-warnings: golden_companion_reconstruction.pdf
+warnings: manuscript
 	@if grep -En 'Overfull|Underfull|LaTeX Warning|Package .* Warning|undefined references|Citation .* undefined' golden_companion_reconstruction.log; then \
 		exit 1; \
 	fi
