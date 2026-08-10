@@ -1,0 +1,285 @@
+{
+  "excluded_path_count": 0,
+  "excluded_release_outputs": [],
+  "excluded_symlinks": [],
+  "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
+  "files": [
+    {
+      "bytes": 108,
+      "mode": "100644",
+      "path": ".gitignore",
+      "role": "export-support",
+      "sha256": "8aec252fe1e8e2a04924eeac30581deea8368b151c9e82d6601a1d6393be8b27",
+      "source_blob": null
+    },
+    {
+      "bytes": 1320,
+      "mode": "100644",
+      "path": ".zenodo.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "a2271a2f1364b0c8b741b57be3ecc2fb98da8f04bd636b9586d65193a9394ee3",
+      "source_blob": "dc3e6ae895880d8f2aa78a3a4ff420955952e3c3"
+    },
+    {
+      "bytes": 470,
+      "mode": "100644",
+      "path": "LICENSE",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "55bd30dbbfb4a62d77bfd74a183e68ac3fa392c12802e0b56ad02613b9248d7c",
+      "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
+    },
+    {
+      "bytes": 866,
+      "mode": "100644",
+      "path": "Makefile",
+      "rewrites": [
+        {
+          "expected_count": 1,
+          "new": "TEXSHELL ?= nix develop .\\#manuscript --command",
+          "old": "TEXSHELL ?= nix develop ..\\#manuscript --command",
+          "reason": "the standalone repository carries its own pinned manuscript flake"
+        },
+        {
+          "expected_count": 1,
+          "new": ".PHONY: all check evidence warnings clean distclean",
+          "old": ".PHONY: all check evidence lint warnings clean distclean",
+          "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
+        },
+        {
+          "expected_count": 1,
+          "new": "all: golden_companion_reconstruction.pdf\n\ncheck: evidence golden_companion_reconstruction.pdf warnings",
+          "old": "all: lint golden_companion_reconstruction.pdf\n\ncheck: evidence lint golden_companion_reconstruction.pdf warnings",
+          "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
+        },
+        {
+          "expected_count": 1,
+          "new": "",
+          "old": "lint:\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n\n",
+          "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
+        },
+        {
+          "expected_count": 1,
+          "new": "golden_companion_reconstruction.pdf: $(SOURCE)\n",
+          "old": "golden_companion_reconstruction.pdf: $(SOURCE)\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n",
+          "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
+        }
+      ],
+      "role": "support",
+      "sha256": "cc2d3bfeb54618fa98dc5c1a5f5229602a90beea15502d6c7a85616e3cf60bf6",
+      "source_blob": "58711b857d7d30ea91949e7d5a56f8300b7494c6"
+    },
+    {
+      "bytes": 312,
+      "mode": "100644",
+      "path": "PROVENANCE.md",
+      "role": "provenance",
+      "sha256": "7dff3351041295410da2375feadbfe2379faf732ff0589d9b254542ad871609d",
+      "source_blob": null
+    },
+    {
+      "bytes": 1875,
+      "mode": "100644",
+      "path": "README.md",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f8ab92910e59a5bb72c38cf29876062bc6269622bf30fd5a548b492dbf1353f4",
+      "source_blob": "bed2c3ef166092888acdeccba08c3b3c94c7b889"
+    },
+    {
+      "bytes": 567,
+      "mode": "100644",
+      "path": "flake.lock",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9ae203c10f2e27ff1a11363a02ac43747d9766f8f17c975b5d825ed480d120cc",
+      "source_blob": "c06115a1e8e270fb2772ce0ef216d75ab95e492f"
+    },
+    {
+      "bytes": 657,
+      "mode": "100644",
+      "path": "flake.nix",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8296d651f4d9146f0f6de5502d505242cff2b9a74a51178190c9896873a31d5a",
+      "source_blob": "c8be986d73ee5a9322cb03ba543fc98e3afac874"
+    },
+    {
+      "bytes": 121473,
+      "mode": "100644",
+      "path": "golden_companion_reconstruction.pdf",
+      "rewrites": [],
+      "role": "release-output",
+      "sha256": "e590d9f2f9719bc947a209ec70e2adfeb9adfa5caf177a195487d8e0c8737cd2",
+      "source_blob": "22a5551ac41b2a4df7de10c4e80e826009edcb79"
+    },
+    {
+      "bytes": 36977,
+      "mode": "100644",
+      "path": "golden_companion_reconstruction.tex",
+      "rewrites": [],
+      "role": "manuscript-source",
+      "sha256": "718320ff6adbf1d513b7459e0ae0a76338358e63a8c3d14cccad6604bfa7c83d",
+      "source_blob": "abcc22126f3d4034247c726fe78f2736767f4070"
+    },
+    {
+      "bytes": 1114,
+      "mode": "100644",
+      "path": "verification/README.md",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "134c191ab3cdfa750b525e2cd619c158f42194a30e65d8187c9a25e144b586df",
+      "source_blob": "53840423506cf6afa691e5abd0c096a1ade9fe3a"
+    },
+    {
+      "bytes": 16785,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/a5_subgroup_decoder.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "58323770acf22c7005f381b34c601e4214c62f06d063d01dbd68cdc533f659b5",
+      "source_blob": "3f2744a28b12118528d8f0f864c0b9238110bd2f"
+    },
+    {
+      "bytes": 7428,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/common_duality.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "9ada388cb5dfc118e865a5122a530f9cb8380e372ecebd9931272f7dfbfd1037",
+      "source_blob": "84921ad339681821b7f1ed4aacdbbc2a2af1f566"
+    },
+    {
+      "bytes": 12364,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/common_duality.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "5de4b17bdf49499625da05a869cf9228993007712c7ade56945f0c0b9e75776c",
+      "source_blob": "fe68205fb77b50eea7dba431211bc2b16dd70811"
+    },
+    {
+      "bytes": 26171,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/coxeter_conic_phase.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "943de37568b1546b06a8940f93a2b525abd69b6047f8ebb7c6c18704ac6e2c0a",
+      "source_blob": "1b2d36d4a0c02c85a3fd59fffc4786445d7291a9"
+    },
+    {
+      "bytes": 43983,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/decorated_parent.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "82a9c36a5b3d1877f472ae311902782386b09e5d7a99ad5d800b5dc225d2b77c",
+      "source_blob": "2a6b5fec768c7d5b3b119d816f45753fc707098d"
+    },
+    {
+      "bytes": 14715,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/decorated_parent_replay.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "a26061f5da1d89dc90371103536402ee41ca3dc67a71c97fcf40418233a3007f",
+      "source_blob": "b5c8c9274013c95f57c422865f914bd19b077ea1"
+    },
+    {
+      "bytes": 30368,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/deep_hole_transform.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "a1755b0baf1067b2353a1be97218fa3d85daa4fa23bfb051ea642da833f1c3bb",
+      "source_blob": "c9dfd28277d83a29a872e2cd5f5301ca8f0f0d21"
+    },
+    {
+      "bytes": 4188,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/h3_arithmetic_phase.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "c7493899d2d9ebe8d5679bca668cd2708fbddae59a2db5ab8ccd7c350d7fc561",
+      "source_blob": "8929b085f674573c3910f0752c58d5495b3ee28c"
+    },
+    {
+      "bytes": 3532,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/h3_good_reduction.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "af8798d14ca790a09da5e4a5cdd9d141161baa695162158bf91c503e881cb923",
+      "source_blob": "49ae1ef03c2ad7723be5097c399048b6bfa0739d"
+    },
+    {
+      "bytes": 48643,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/matching_module.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "d2100485add18a92a148f0584d41b2108100baf545fd361e6cc08b7e61e92f40",
+      "source_blob": "4da40c871a0b42d88d1363ac85f719816180942b"
+    },
+    {
+      "bytes": 25385,
+      "mode": "100644",
+      "path": "verification/evidence/frozen/matching_orbit_scout.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "d45512c9087874acdaf109367753f45151c2dd0c2cb745777f62ad26489e7394",
+      "source_blob": "1cc32b8a2d27122ec81c973e0aa13ecf8f09f892"
+    },
+    {
+      "bytes": 1211,
+      "mode": "100644",
+      "path": "verification/evidence/icosahedral_stabilizer_tower.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "bd17a96de940caf4f8b6511796d10a46a375d4c3ba0ae5be07c4cba991b876c2",
+      "source_blob": "b3b740cbdc8af617a61e767304fa54e9efab49b5"
+    },
+    {
+      "bytes": 7244,
+      "mode": "100644",
+      "path": "verification/evidence/icosahedral_stabilizer_tower.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "42aac040653ef7deb139c99724bef9827bbf4cd31f46aad99883dcf3ef763c7c",
+      "source_blob": "4e8579fef959b03ddc3a5c68b96ded3100f0f094"
+    },
+    {
+      "bytes": 8380,
+      "mode": "100644",
+      "path": "verification/evidence/paper_ii_chordal_axis.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "b7e0adde2bc32c7ad7f35b4f97703c1c91a63fab7b563d2bef5a9e97962c344b",
+      "source_blob": "d7e884c151419d3fbb4aee6b002f486585ca6f17"
+    },
+    {
+      "bytes": 27423,
+      "mode": "100644",
+      "path": "verification/evidence/paper_ii_chordal_axis.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "8971dabc4fd668be8ce7858e965be7ac1919405121c97605e2db4985d95a18c1",
+      "source_blob": "7ac156298dbf7f639364e6a92f22da003f81d4b3"
+    }
+  ],
+  "github": "tavisrudd/golden-companion-correspondence",
+  "main_sources": [
+    "golden_companion_reconstruction.tex"
+  ],
+  "manifest_self_excluded": true,
+  "paper_ids": [
+    "golden_companion_correspondence"
+  ],
+  "paper_registry_sha256": "d49a06e2b25e828827166586dfd3aad92342119e4e38decb1a695c5ad558003c",
+  "release_output_policy": "legacy-unspecified",
+  "repository": "golden-companion-correspondence",
+  "repository_map_sha256": "849a63f99382c1276f2ffa0fe4728923a82851640b6ed61fe71a5ebed7bdb0ce",
+  "schema_version": 1,
+  "source_commit": "31303963a214b06bfababdb8281bf15a7cc9a2fc"
+}

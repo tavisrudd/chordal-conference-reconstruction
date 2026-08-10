@@ -1,0 +1,161 @@
+{
+  "classification": {
+    "faithful_projective_A5": "every odd prime ideal, over its residue field",
+    "lattice_good": "every prime ideal except (2)",
+    "prime_field_rational": "ramified p=5 and split p congruent to +/-1 mod 5",
+    "quadratic_field_only_in_fixed_model": "inert p congruent to +/-2 mod 5"
+  },
+  "finite_field_replays": [
+    {
+      "characteristic": 2,
+      "distinct_mirrors": 4,
+      "field": "F4=tau quotient at (2)",
+      "field_order": 4,
+      "projective_A5_action": "not_defined_on_this_degenerate_mirror_model",
+      "projective_point_multiplicity_spectrum": {
+        "0": 7,
+        "1": 8,
+        "2": 6
+      }
+    },
+    {
+      "characteristic": 5,
+      "distinct_mirrors": 15,
+      "field": "F5, ramified tau=3",
+      "field_order": 5,
+      "projective_point_multiplicity_spectrum": {
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "projective_reflection_group_order": 60,
+      "singular_stratum_orbit_sizes": {
+        "2": [
+          15
+        ],
+        "3": [
+          10
+        ],
+        "5": [
+          6
+        ]
+      }
+    },
+    {
+      "characteristic": 3,
+      "distinct_mirrors": 15,
+      "field": "F9, inert characteristic 3",
+      "field_order": 9,
+      "fixed_by_prime_field_frobenius": 3,
+      "mirror_set_prime_field_frobenius_stable": false,
+      "projective_point_multiplicity_spectrum": {
+        "1": 60,
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "projective_reflection_group_order": 60,
+      "singular_stratum_orbit_sizes": {
+        "2": [
+          15
+        ],
+        "3": [
+          10
+        ],
+        "5": [
+          6
+        ]
+      }
+    },
+    {
+      "characteristic": 11,
+      "distinct_mirrors": 15,
+      "field": "F11, split tau=4",
+      "field_order": 11,
+      "projective_point_multiplicity_spectrum": {
+        "0": 12,
+        "1": 90,
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "projective_reflection_group_order": 60,
+      "singular_stratum_orbit_sizes": {
+        "2": [
+          15
+        ],
+        "3": [
+          10
+        ],
+        "5": [
+          6
+        ]
+      }
+    },
+    {
+      "characteristic": 11,
+      "distinct_mirrors": 15,
+      "field": "F11, split tau=8",
+      "field_order": 11,
+      "projective_point_multiplicity_spectrum": {
+        "0": 12,
+        "1": 90,
+        "2": 15,
+        "3": 10,
+        "5": 6
+      },
+      "projective_reflection_group_order": 60,
+      "singular_stratum_orbit_sizes": {
+        "2": [
+          15
+        ],
+        "3": [
+          10
+        ],
+        "5": [
+          6
+        ]
+      }
+    }
+  ],
+  "model": {
+    "integer_ring": "Z[tau]/(tau^2-tau-1)",
+    "mirrors": "coordinate axes plus cyclic permutations of (1,+/-tau,+/-(tau-1))"
+  },
+  "schema": "good_reduction-h3-good-reduction-v1",
+  "symbolic": {
+    "bad_prime_ideals_for_lattice": [
+      "(2)"
+    ],
+    "nonzero_minor_absolute_norm_counts": {
+      "1": 37,
+      "16": 188,
+      "4": 156,
+      "64": 4
+    },
+    "nonzero_rank_3_minor_count": 385,
+    "projective_reflection_group_order": 60,
+    "projective_singular_stratum_orbit_sizes": {
+      "2": [
+        15
+      ],
+      "3": [
+        10
+      ],
+      "5": [
+        6
+      ]
+    },
+    "rank_2_flat_multiplicity_counts": {
+      "2": 15,
+      "3": 10,
+      "5": 6
+    },
+    "rank_3_minor_count": 455,
+    "scaled_reflection_determinant_absolute_norm_counts": {
+      "1": 3,
+      "4096": 12
+    },
+    "zero_rank_3_minor_count": 70
+  }
+}

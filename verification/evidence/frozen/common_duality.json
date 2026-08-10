@@ -1,0 +1,610 @@
+{
+  "J_even_dimension": 12,
+  "J_odd_dimension": 4,
+  "J_odd_relation_pairs": [
+    [
+      1,
+      10
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      9,
+      11
+    ]
+  ],
+  "J_relation_permutation": [
+    0,
+    10,
+    2,
+    13,
+    4,
+    5,
+    14,
+    7,
+    8,
+    11,
+    1,
+    9,
+    12,
+    3,
+    6,
+    15
+  ],
+  "a5_intersection_projective_order": 12,
+  "a5_projective_order": 60,
+  "common_coherent_refinement_rank": 16,
+  "common_refinement_first_eigenmatrix": [
+    [
+      1,
+      60,
+      40,
+      60,
+      120,
+      30,
+      120,
+      60,
+      120,
+      120,
+      60,
+      120,
+      120,
+      60,
+      120,
+      120
+    ],
+    [
+      1,
+      -6,
+      -4,
+      -6,
+      10,
+      8,
+      32,
+      -6,
+      -12,
+      -12,
+      5,
+      10,
+      10,
+      -6,
+      -12,
+      -12
+    ],
+    [
+      1,
+      -6,
+      -4,
+      -6,
+      -12,
+      -3,
+      21,
+      27,
+      21,
+      -12,
+      -6,
+      -12,
+      -12,
+      -6,
+      21,
+      -12
+    ],
+    [
+      1,
+      -6,
+      -4,
+      -6,
+      -12,
+      8,
+      10,
+      -6,
+      10,
+      32,
+      -6,
+      -12,
+      -12,
+      5,
+      -12,
+      10
+    ],
+    [
+      1,
+      5,
+      -4,
+      -6,
+      -1,
+      -3,
+      -12,
+      5,
+      10,
+      10,
+      5,
+      10,
+      10,
+      -6,
+      -12,
+      -12
+    ],
+    [
+      1,
+      16,
+      -4,
+      16,
+      -12,
+      19,
+      -12,
+      16,
+      -12,
+      -12,
+      16,
+      -12,
+      -12,
+      16,
+      -12,
+      -12
+    ],
+    [
+      1,
+      16,
+      7,
+      5,
+      -12,
+      -3,
+      10,
+      -6,
+      -1,
+      -1,
+      -6,
+      -1,
+      -1,
+      -6,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -6,
+      18,
+      -6,
+      10,
+      8,
+      -12,
+      5,
+      10,
+      -12,
+      -6,
+      -12,
+      10,
+      -6,
+      -12,
+      10
+    ],
+    [
+      1,
+      -6,
+      7,
+      5,
+      10,
+      -3,
+      -1,
+      5,
+      -12,
+      10,
+      -6,
+      10,
+      -12,
+      5,
+      -1,
+      -12
+    ],
+    [
+      1,
+      -6,
+      -4,
+      16,
+      10,
+      -3,
+      -1,
+      -6,
+      10,
+      -1,
+      5,
+      -12,
+      -1,
+      -6,
+      -1,
+      -1
+    ],
+    [
+      1,
+      5,
+      -4,
+      -6,
+      10,
+      8,
+      -12,
+      -6,
+      -12,
+      10,
+      -6,
+      -12,
+      10,
+      -6,
+      32,
+      -12
+    ],
+    [
+      1,
+      5,
+      -4,
+      -6,
+      10,
+      -3,
+      -1,
+      -6,
+      10,
+      -12,
+      -6,
+      -1,
+      -1,
+      16,
+      -1,
+      -1
+    ],
+    [
+      1,
+      5,
+      -4,
+      -6,
+      10,
+      -3,
+      -1,
+      5,
+      -12,
+      -1,
+      5,
+      -1,
+      -12,
+      -6,
+      -1,
+      21
+    ],
+    [
+      1,
+      -6,
+      -4,
+      5,
+      -12,
+      8,
+      -12,
+      -6,
+      10,
+      -12,
+      -6,
+      32,
+      -12,
+      -6,
+      10,
+      10
+    ],
+    [
+      1,
+      -6,
+      7,
+      -6,
+      -12,
+      -3,
+      -1,
+      -6,
+      -1,
+      -1,
+      16,
+      -1,
+      -1,
+      5,
+      10,
+      -1
+    ],
+    [
+      1,
+      -6,
+      -4,
+      5,
+      -12,
+      -3,
+      -1,
+      5,
+      -12,
+      -1,
+      -6,
+      -1,
+      21,
+      5,
+      -1,
+      10
+    ]
+  ],
+  "common_refinement_formally_and_fourier_self_dual": true,
+  "common_refinement_intersection_tensor_sha256": "311dba6eaad5d5bd52587a2820c1553a24310bcb2882d06460109574ff2ad683",
+  "common_refinement_valencies": [
+    1,
+    60,
+    40,
+    60,
+    120,
+    30,
+    120,
+    60,
+    120,
+    120,
+    60,
+    120,
+    120,
+    60,
+    120,
+    120
+  ],
+  "common_relation_metadata": [
+    {
+      "minus_relation": 0,
+      "plus_relation": 0,
+      "representative": [
+        0,
+        0,
+        0
+      ],
+      "size": 1
+    },
+    {
+      "minus_relation": 7,
+      "plus_relation": 1,
+      "representative": [
+        0,
+        1,
+        4
+      ],
+      "size": 60
+    },
+    {
+      "minus_relation": 2,
+      "plus_relation": 2,
+      "representative": [
+        1,
+        1,
+        1
+      ],
+      "size": 40
+    },
+    {
+      "minus_relation": 6,
+      "plus_relation": 2,
+      "representative": [
+        0,
+        1,
+        2
+      ],
+      "size": 60
+    },
+    {
+      "minus_relation": 3,
+      "plus_relation": 3,
+      "representative": [
+        1,
+        1,
+        3
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 4,
+      "plus_relation": 4,
+      "representative": [
+        0,
+        0,
+        1
+      ],
+      "size": 30
+    },
+    {
+      "minus_relation": 6,
+      "plus_relation": 4,
+      "representative": [
+        1,
+        3,
+        2
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 5,
+      "plus_relation": 5,
+      "representative": [
+        0,
+        1,
+        1
+      ],
+      "size": 60
+    },
+    {
+      "minus_relation": 5,
+      "plus_relation": 5,
+      "representative": [
+        1,
+        1,
+        2
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 7,
+      "plus_relation": 5,
+      "representative": [
+        1,
+        4,
+        2
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 1,
+      "plus_relation": 6,
+      "representative": [
+        0,
+        1,
+        3
+      ],
+      "size": 60
+    },
+    {
+      "minus_relation": 5,
+      "plus_relation": 6,
+      "representative": [
+        1,
+        2,
+        4
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 7,
+      "plus_relation": 6,
+      "representative": [
+        1,
+        1,
+        4
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 2,
+      "plus_relation": 7,
+      "representative": [
+        0,
+        1,
+        5
+      ],
+      "size": 60
+    },
+    {
+      "minus_relation": 4,
+      "plus_relation": 7,
+      "representative": [
+        1,
+        2,
+        3
+      ],
+      "size": 120
+    },
+    {
+      "minus_relation": 6,
+      "plus_relation": 7,
+      "representative": [
+        1,
+        1,
+        5
+      ],
+      "size": 120
+    }
+  ],
+  "conic_projective_point_count": 12,
+  "field": 11,
+  "full_conic_stabilizer_order_formula": "q(q^2-1)",
+  "golden_closure_affine_orbit_sizes": [
+    1,
+    120,
+    550,
+    660
+  ],
+  "golden_closure_equals_rank_four_golden_fusion": true,
+  "golden_closure_projective_orbit_sizes_including_zero": [
+    1,
+    12,
+    55,
+    66
+  ],
+  "golden_closure_projective_order": 1320,
+  "golden_map_J": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10
+    ],
+    [
+      0,
+      10,
+      0
+    ]
+  ],
+  "odd_fourier_matrix": [
+    [
+      -11,
+      0,
+      44,
+      -22
+    ],
+    [
+      0,
+      -11,
+      22,
+      44
+    ],
+    [
+      22,
+      11,
+      11,
+      0
+    ],
+    [
+      -11,
+      22,
+      0,
+      11
+    ]
+  ],
+  "odd_fourier_matrix_square": "1331 I_4",
+  "ordinary_and_entrywise_Z2_grading_verified": true,
+  "plus_to_minus_relation_permutation_under_J": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    6
+  ],
+  "rank_four_golden_fusion_blocks": [
+    [
+      0
+    ],
+    [
+      3
+    ],
+    [
+      1,
+      5,
+      6
+    ],
+    [
+      2,
+      4,
+      7
+    ]
+  ],
+  "schema": "duality-clebsch-common-duality-v1",
+  "trusted_input": {
+    "a5_data_checker": "a5_subgroup_decoder.py",
+    "a5_data_checker_sha256": "58323770acf22c7005f381b34c601e4214c62f06d063d01dbd68cdc533f659b5"
+  }
+}

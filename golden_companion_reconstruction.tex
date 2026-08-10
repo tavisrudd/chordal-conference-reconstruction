@@ -1,0 +1,859 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{array,booktabs}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbf F}
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\PP}{\mathbf P}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Sing}{\operatorname{Sing}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\PGL}{\operatorname{PGL}}
+
+\title{The Golden Companion Correspondence}
+\author{Tavis Rudd}
+\date{August 2026}
+
+\begin{document}
+\begingroup
+\makeatletter
+\let\clebschmaintitle\@title
+\def\@title{\large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{V}\\[0.7em]
+  \LARGE\clebschmaintitle}
+\makeatother
+\maketitle
+\endgroup
+
+\begin{center}
+\small\itshape
+From deep holes, a cubic takes shape; its companion finds its bearings,\\
+the carrier stands fixed while their shadows move; from minimum words, the plane returns,\\
+and \textbf{the scattered shadows gather home}.
+\end{center}
+
+\begin{abstract}
+Paper~II of this series produces a signed cubic in a ten-dimensional matching
+quotient.  We identify its canonical five-dimensional residue and prove that
+it is not the conference cubic appearing in Papers~I and III: the two are
+distinguished companions in the two-dimensional pencil invariant under the
+irreducible five-dimensional action of \(A_5\).  The conference member has
+six nodes.  The Paper-II residue is a chordal Hankel determinant, singular
+along a rational normal quartic.  Its twelve rational singular points form
+\(A_5/C_5\); pairing points with the same stabilizer gives \(A_5/D_5\) and
+identifies its six fibres equivariantly with the original matched axes.
+Thus the two companion cubics realize one six-axis carrier through different
+singular shadows.  We determine the normalized outer-normalizer action
+exactly on the Paper-II pencil and prove that, after one chordal
+companion is retained, its difference operator gives an exact oriented round
+trip between sheet and conference orientations.  The result rules out a
+tempting literal identification of the two invariant cubic lines while
+recovering the marked equivalence that replaces it.
+\end{abstract}
+
+\noindent\textbf{Keywords.} icosahedral invariant; chordal cubic; rational
+normal quartic; conference matrix; perfect matching; reconstruction.
+
+\smallskip
+\noindent\textbf{2020 Mathematics Subject Classification.} 14J30, 20C20,
+05C70, 51E20.
+
+\section{Introduction and statement}
+\label{sec:introduction}
+
+An invariant can retain the correct symmetry and still be the wrong
+invariant.  The five-dimensional
+irreducible representation of \(A_5\) has a two-dimensional space of
+invariant cubics, not a unique invariant line.
+Consequently, agreement of the carrier, group action, and orientation
+character does not identify the signed cubic extracted from a matching
+quotient with the triangle cubic of a conference matrix.  Papers~I and III
+construct the latter with explicit markings
+\cite{RuddRigidity2026,RuddPassages2026}.
+
+The exceptional six-point actions, matching dictionaries, and
+Joubert--Segre cubics are classical; we follow
+Howard--Millson--Snowden--Vakil
+\cite[\S\S1.1--1.6 and 2.1--2.4]{HMSVOuter}.  Conference switching is likewise
+standard \cite[\S\S1--3]{GoethalsSeidel1967}.  Our contribution is to locate
+and normalize the specific Paper-II tensor in this pencil over \(\F_{11}\),
+then identify its marked axes.
+
+\Needspace{18\baselineskip}
+\medskip
+\noindent\textbf{Series perspective.}
+\emph{Clebsch: Rigidity from Sparse Shadows} asks when incomplete invariants
+determine the structures that produced them.  Papers~I and III reconstruct
+marked conference companions, whereas Paper~II reconstructs a signed chordal
+companion.  The present paper proves that they lie in one invariant pencil,
+recover the same six-axis carrier, and admit an exact oriented transport
+relative to a selected chordal line.  Paper~IV is the parallel lower branch:
+minimum-word pairs reconstruct a marked conic plane and polarity, with no
+cubic identification asserted.  Figure~\ref{fig:series-map} records this
+division.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Latex,
+  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
+    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
+    inner sep=2.5pt},
+  active/.style={paper,very thick,fill=black!12},
+  package/.style={paper,text width=38mm}
+]
+\node[paper]   (p1) at (0,1.45) {\textbf{I}\\conference companion};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\chordal companion};
+\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\conference companion};
+\node[active]  (p5) at (5.25,0.35) {\textbf{V}\\marked companion correspondence};
+\node[package] (gold) at (10.5,0.35) {one six-axis carrier\\conference \(+\) chordal};
+\node[paper]   (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
+\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and polarity};
+\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
+\draw[<->] (p2.east) -- (p5.west);
+\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
+\draw[->,thick] (p5.east) -- (gold.west);
+\draw[->,thick] (p4.east) -- (plane.west);
+\end{tikzpicture}
+\caption{Series map.  Upper double arrows are the marked transports and
+returns proved here; the right arrow is the common-carrier theorem.  The
+lower solid arrow is Paper~IV's independent reconstruction.}
+\label{fig:series-map}
+\end{figure}
+
+Fix the \(H_3\) matching
+\[
+ M=\{01,25,37,49,68,10\,11\}
+\]
+on the twelve points of \(\PP^1(\F_{11})\).  Its stabilizer in
+\(\operatorname{PSL}_2(11)\) is a group \(G\cong A_5\), acting transitively
+on the six pairs of \(M\).  Write \(X_M\) for that six-set and
+\[
+ A_M=\bigl\{(u_x)_{x\in X_M}\in\F_{11}^{X_M}:
+                 \textstyle\sum_xu_x=0\bigr\}
+\]
+for its augmentation module.  Paper~II constructs a ten-dimensional
+quotient \(W\), an intrinsic pair of matching sheets, and their first
+nonzero signed moment \(\mu_3\in\Sym^3(W)\)
+\cite{RuddFactorization2026}.
+Since the action on \(X_M\) is transitive, a pair stabilizer has order ten;
+the order-ten subgroups of \(A_5\) are the self-normalizing groups \(D_5\).
+Thus \(X_M\cong A_5/D_5\).
+
+Let \(W_5\) be the five-isotypic summand of \(W|_G\).  The invariant
+self-duality of \(W_5\) turns the projection of \(\mu_3\) into a projective
+cubic line \([H_M]\subset\PP(\Sym^3(W_5^*))\).
+
+\begin{definition}[Retained chordal residue]
+\label{def:retained-chordal-residue}
+The retained Paper-II input is the triple
+\[
+ \mathcal R_M=(G\curvearrowright W_5,[H_M]).
+\]
+It remembers the marked \(G\)-action and the projective cubic line.  It does
+not remember \(X_M\), an axis basis, a conference signing, or a generator of
+\([H_M]\).  Isomorphisms are \(G\)-equivariant projectivities carrying the
+cubic line to the cubic line.
+\end{definition}
+
+\begin{theorem}[Chordal placement and axis compatibility]
+\label{thm:chordal-axis-reconstruction}
+The marked singular geometry of \(\mathcal R_M\) supplies a canonical
+six-element \(G\)-set \(\widehat X_M\).  There is a unique
+\(G\)-equivariant identification \(\widehat X_M\cong X_M\).
+
+More explicitly, after precomposing the \(G\)-action with the nontrivial
+outer automorphism of \(A_5\), the retained cubic has equation
+\[
+ H=z_0z_2z_4+2z_1z_2z_3-z_0z_3^2-z_1^2z_4-z_2^3
+   =\det\!\begin{pmatrix}
+       z_0&z_1&z_2\\ z_1&z_2&z_3\\ z_2&z_3&z_4
+     \end{pmatrix}.
+\]
+Its singular locus is the rational normal quartic
+\[
+ R:\ [s:t]\longmapsto[s^4:s^3t:s^2t^2:st^3:t^4].
+\]
+The twelve points \(R(\F_{11})\) form the homogeneous \(G\)-set
+\(A_5/C_5\).  Pairing two points precisely when their exact stabilizers in
+\(G\) agree gives \(\widehat X_M\cong A_5/D_5\).
+
+The recovered six-set has a unique \(G\)-invariant order-six conference
+switching class up to opposite.  Its triangle cubic defines a projective line
+\([C_M]\) in the same invariant pencil.  The lines \([H_M]\) and \([C_M]\)
+are distinct.  Thus \(\mathcal R_M\) recovers both the original six-axis
+carrier and its unoriented conference companion.
+\end{theorem}
+
+Abstractly, the six-set \(A_5/D_5\) is already determined by the retained
+group \(G\), through its six Sylow-\(5\) normalizers.  The theorem's content is
+that the stabilizer fibres cut out by the Paper-II chordal singular geometry
+give exactly that six-set and agree with the original matching pairs.
+
+The invariant pencil was previously exhibited in the needed
+characteristic-zero model: Pinardin and Zhang write its two generators and identify its two
+chordal members and singular rational normal quartics
+\cite[\S6.2, equations~(6.3)--(6.5)]{PinardinZhang2025}.  The content of
+Theorem~\ref{thm:chordal-axis-reconstruction} is the exact placement of the
+Paper-II signed tensor in the reduction at eleven and the marked recovery of
+its original six axes.  The \(A_5\) marking is essential: an unmarked chordal
+cubic has automorphism group \(\PGL_2\)\cite[\S5]{CheltsovEtAl2025Chordal}.
+
+\begin{proposition}[Outer action on the companion pencil]
+\label{prop:outer-pencil-action}
+Order the six pairs as displayed above, use the induced lexicographic cubic
+basis, and normalize generators \(C_M,H_M\) so that their first nonzero
+coefficients are one.  In this ordered pencil basis, an odd element of the
+order-\(120\) normalizer of \(G\) on the six axes acts by
+\[
+ C_M\longmapsto-C_M,\qquad H_M\longmapsto8C_M+H_M,
+\]
+and therefore projectively by
+\[
+ [a:b]\longmapsto[-a+8b:b].
+\]
+It reverses the chosen conference generator, fixes the ten-point member
+\([1:3]\), and exchanges the two chordal members \([0:1]\) and \([1:7]\).
+\end{proposition}
+
+The selected chordal line is essential in the reverse direction: the
+conference package alone does not distinguish the two chordal companions.
+Once that line is retained, however, the same outer action supplies the
+orientation comparison rather than merely obstructing it.  Pinardin and
+Zhang already exhibit the nonstandard \(S_5\)-extension and its involution
+exchanging the two rational normal quartics in characteristic zero
+\cite[\S8.2]{PinardinZhang2025}.  The assertion below concerns the exact
+normalized action on the Paper-II reduction and its compatibility with the
+two source orientation torsors.
+
+\begin{theorem}[Marked oriented companion round trip]
+\label{thm:marked-oriented-round-trip}
+Let
+\[
+ \mathcal I=\Sym^3(A_M^*)^G
+\]
+and let \(q\) denote the linear action on \(\mathcal I\) induced by the
+nontrivial coset of \(N_{S_6}(G)/G\).  This action is independent of the
+coset representative.  Put \(\Delta=q-1\).
+
+The conference line is the \((-1)\)-eigenspace \(\mathcal I^-\) of \(q\).
+For either chordal line \(L\), the restriction
+\[
+ \Delta|_L:L\longrightarrow\mathcal I^-
+\]
+is an isomorphism.  In the normalization of Proposition
+\ref{prop:outer-pencil-action}, the forward and reverse maps are
+\[
+ h\longmapsto c=8^{-1}\Delta h,
+ \qquad
+ c\longmapsto h=(\Delta|_L)^{-1}(8c).
+\]
+They are inverse.  Moreover \(-h\mapsto-c\), so the map identifies the
+Paper-II sheet-orientation torsor with the conference-orientation torsor.
+
+Consequently, the marked packages
+\[
+ (G\curvearrowright A_M,L,h)
+ \quad\longleftrightarrow\quad
+ (G\curvearrowright A_M,L,c)
+\]
+are exactly recoverable in both directions.  The line \(L\) is returned as
+part of the marking; no claim is made that an unmarked conference cubic
+chooses between the two chordal companions.
+\end{theorem}
+
+Thus the missing datum is not an arbitrary bijection between two abstract
+two-element sets.  It is precisely the choice of chordal companion in the
+marked invariant pencil.  Paper II supplies that choice through its projected
+tensor; a transport starting from Papers I or III must declare it as part of
+its bridge marking.
+
+\medskip
+\noindent\textbf{Proof and reading map.}
+\begin{center}
+\footnotesize
+\begin{tikzpicture}[
+  >=Latex,node distance=8mm and 14mm,
+  box/.style={draw,rounded corners=1.5pt,align=center,text width=43mm,
+    inner sep=4pt}, every edge/.style={draw,->}]
+\node[box] (moment) {Paper-II signed moment\\project to the unique \(5\)-summand};
+\node[box,right=of moment] (hankel) {outer-twisted coefficient identity\\gives the Hankel determinant};
+\node[box,below=of hankel] (curve) {the singular quartic gives\\\(A_5/C_5\)};
+\node[box,left=of curve] (axes) {equal stabilizers recover \(A_5/D_5\)\\axes and conference companion};
+\draw (moment) -- (hankel);
+\draw (hankel) -- (curve);
+\draw (curve) -- (axes);
+\draw[->] (axes) -- node[left,font=\scriptsize,align=right]
+  {selected \(L\), \(q-1\), and\\inverse tensor bridge} (moment);
+\end{tikzpicture}
+\end{center}
+
+Section~\ref{sec:projection} proves the projection and coefficient identity.
+Section~\ref{sec:singular} gives the human singular-locus and stabilizer
+proof.  Section~\ref{sec:pencil} proves the marked oriented companion
+theorem while isolating its exact unmarked boundary.
+Section~\ref{sec:three-transports} types the three source-specific returns.
+Paper~IV is the independent branch of the series: its minimum-word
+reconstruction is not used here.
+
+\section{The five-dimensional residue}
+\label{sec:projection}
+
+The restriction of Paper II's quotient to \(G\) has character
+\[
+\begin{array}{c@{\qquad}ccccc}
+\text{class}&1&2&3&5A&5B\\
+\text{class size}&1&15&20&12&12\\
+\chi_W&10&2&1&0&0
+\end{array}
+\]
+and hence
+\[
+ W|_G\cong\mathbf1\oplus V_4\oplus V_5.
+\]
+The quotient and signed moment are imported from Paper~II's stable results
+\emph{The \(3,6,10\) quotient ranks} and
+\emph{Balanced sheets and cubic-first orientation}
+\cite{RuddFactorization2026}; the displayed restriction is the character
+calculation used here.  The field \(\F_{11}\) contains the fifth roots of
+unity and \(\sqrt5=4\), and \(11\nmid60\), so it is a splitting field for
+this calculation and the summands are absolutely irreducible.
+Because \(11\nmid60\), the central character idempotent
+\[
+ e_5=\frac5{60}\sum_{g\in G}\chi_5(g)g
+\]
+is defined over \(\F_{11}\), is idempotent, and has rank five.  The
+degree-six permutation character is \(\mathbf1+\chi_5\), so \(A_M\cong V_5\).
+Schur's lemma gives
+\[
+ \dim_{\F_{11}}\operatorname{Hom}_G(A_M,e_5W)=1.
+\]
+
+\noindent\emph{Proof mode for the transport.}
+The representation-theoretic reduction is the human argument above.  Both
+\(A_M\) and \(e_5W\) are copies of the absolutely irreducible module \(V_5\),
+so their intertwiner is unique up to scalar.  There are two comparisons with
+the binary-quartic model: the direct identification and its outer twist.
+The singular-curve test selects the twist; the matrices below then fix its
+scalar and compare the cubic coefficients.  These finite calculations are
+computer-assisted identities over \(\F_{11}\).  They are part of the proof,
+not merely discovery data.  The versioned standard-library checker and its
+exact JSON output are named in Section~\ref{sec:verification}; it rebuilds
+both carrier actions from Paper II's frozen inputs, solves the generator
+equations, and compares all thirty-five cubic coefficients.
+
+For auditability, choose the axis basis \(e_i-e_6\) of \(A_M\) and Paper
+II's reduced-pivot basis of \(W_5\).  One generator of the intertwiner line
+\(A_M\to W_5\) is
+\[
+ T=\begin{pmatrix}
+ 2&9&7&6&4\\
+ 0&9&10&10&6\\
+ 5&1&9&3&0\\
+ 0&3&10&1&6\\
+ 1&0&0&0&0
+ \end{pmatrix}.
+\]
+Substitution in generators of \(G\) verifies \(\rho_{W_5}(g)T=
+T\rho_{A_M}(g)\); its determinant is nonzero.  Put \(B=I+J\), where \(J\)
+is the \(5\)-by-\(5\) all-ones matrix; this is the invariant self-duality in
+the axis basis.  Let \(\operatorname{Pol}\) denote the
+standard conversion from a symmetric tensor to its homogeneous polynomial,
+including the mixed-monomial multiplicities.  If \(\nu\in\Sym^3(W_5)\) is
+the chosen-sheet projection of \(\mu_3\), its axis-cubic coefficient vector is
+\[
+ \widetilde h_M=
+ \operatorname{Pol}\!\left(\Sym^3(BT^{-1})\nu\right).
+\]
+
+The direct \(\Sym^4\)-identification has the right character but does not
+carry the Veronese curve to the singular curve.  After the nontrivial class
+of \(\operatorname{Out}(A_5)\), the required projectivity is
+\[
+ U=\begin{pmatrix}
+ 0&0&3&5&3\\
+ 4&1&1&10&4\\
+ 3&6&3&0&0\\
+ 5&1&6&10&5\\
+ 9&10&10&7&1
+ \end{pmatrix}.
+\]
+Both the direct and twisted intertwiner spaces are one-dimensional, but only
+the twisted one has the geometric property just stated.  The first nonzero
+coefficient of the polynomialized vector \(\widetilde h_M\) is \(3\).  Put
+\[
+ h_M=3^{-1}\widetilde h_M=4\widetilde h_M.
+\]
+The factor \(3^{-1}\) is held fixed when the sheet is reversed, so the other
+sheet gives \(-h_M\), not a second projective normalization.  With the
+pullback convention used by the checker, \(U(h_M)\) means
+\(h_M(Uz)\).  All its coefficients vanish except
+\[
+ [z_0z_2z_4,z_1z_2z_3,z_0z_3^2,z_1^2z_4,z_2^3]
+   =[8,5,3,3,3].
+\]
+This is exactly \(8H\).  Thus the normalized generator used in Theorem
+\ref{thm:marked-oriented-round-trip} is \(h_M\), while \(3h_M\) is its
+polynomialized axis image before \(\operatorname{Pol}^{-1}\), inverse
+self-duality, and the inverse bridge recover the projected Paper-II tensor.
+The conference coefficient line is different; the
+two normalized coefficient vectors have rank two.  This proves the
+chordal-placement assertion of
+Theorem~\ref{thm:chordal-axis-reconstruction}.
+
+\section{The singular quartic recovers the axes}
+\label{sec:singular}
+
+\begin{lemma}[Singular locus of the Hankel determinant]
+\label{lem:hankel-singular-locus}
+Over \(\F_{11}\), the singular scheme of \(H=0\) is the rational normal
+quartic \(R\).
+\end{lemma}
+
+\begin{proof}
+The five partial derivatives are
+\[
+\begin{split}
+ z_2z_4-z_3^2,&\qquad 2(z_2z_3-z_1z_4),\\
+ z_0z_4+2z_1z_3-3z_2^2,&\qquad 2(z_1z_2-z_0z_3),\\
+ z_0z_2-z_1^2.&
+\end{split}
+\]
+Let \(I_R\) be the ideal of the six \(2\)-by-\(2\) minors of
+\[
+ \begin{pmatrix}z_0&z_1&z_2&z_3\\z_1&z_2&z_3&z_4\end{pmatrix}.
+\]
+These minors define the rational normal quartic scheme.  Four are scalar
+multiples of the first, second, fourth, and fifth displayed derivatives.
+Write the other two as
+\[
+ A=z_0z_4-z_1z_3,\qquad B=z_1z_3-z_2^2.
+\]
+The middle derivative is \(A+3B\), so the Jacobian ideal \(J\) is contained
+in \(I_R\).  Conversely, on \(D(z_2)\), the identity
+\[
+ z_2A=z_0(z_2z_4-z_3^2)+z_3(z_0z_3-z_1z_2)
+\]
+puts \(A\), and then \(B\), in \(J_{z_2}\).  On \(D(z_0)\),
+\[
+ z_0B=z_1(z_0z_3-z_1z_2)-z_2(z_0z_2-z_1^2)
+\]
+does the same; the symmetric identity handles \(D(z_4)\).  These three
+opens cover the projective Jacobian scheme, since \(z_0=z_2=z_4=0\) and the
+outer two derivatives force \(z_1=z_3=0\).  Hence the saturated Jacobian
+ideal equals \(I_R\), proving the scheme-theoretic assertion.
+\end{proof}
+
+The group \(G\) acts faithfully on \(R\cong\PP^1\), hence through
+\(\PGL_2(11)\).  Its composite with the determinant-class quotient
+\(\PGL_2(11)/\operatorname{PSL}_2(11)\cong C_2\) is trivial because
+\(G\cong A_5\) is simple.  Thus \(G\) lies in
+\(\operatorname{PSL}_2(11)\).  For \(x\in R(\F_{11})\), its
+stabilizer lies in the
+order-\(55\) Borel subgroup of \(\operatorname{PSL}_2(11)\), hence has order
+dividing \(\gcd(60,55)=5\).  A Sylow \(5\)-subgroup is split and fixes two
+points.  Distinct Sylow \(5\)-subgroups cannot share a fixed point, since
+the point stabilizer has order at most five.  The six Sylow subgroups
+therefore supply \(6\cdot2=12\) distinct points, exhausting \(R(\F_{11})\).
+Every point stabilizer is \(C_5\), the action is transitive, and the six
+fixed-point pairs form
+\[
+ G/N_G(C_5)\cong A_5/D_5.
+\]
+The stabilizer of each pair of the original matching is also \(D_5\), and
+this subgroup is self-normalizing in \(G\).  Hence it fixes a unique matching
+pair in the transitive \(G/D_5\) action.  Sending a singular point
+to the matching pair fixed by the normalizer of its stabilizer therefore
+gives the intrinsic map
+\[
+ A_5/C_5\longrightarrow A_5/D_5,
+ \qquad gC_5\longmapsto gN_G(C_5),
+\]
+with fibres of size two.  This proves the axis-compatibility clause of
+Theorem~\ref{thm:chordal-axis-reconstruction}.
+
+\begin{lemma}[The unoriented conference companion]
+\label{lem:unoriented-conference-companion}
+The recovered \(G\)-set \(\widehat X_M\cong A_5/D_5\) determines a unique
+\(G\)-invariant order-six conference switching class up to opposite, and
+hence a unique projective triangle-cubic line \([C_M]\).
+\end{lemma}
+
+\begin{proof}
+Normalize a symmetric conference signing by switching so that its first row
+is positive.  Orthogonality with that row forces every other row to have two
+positive and two negative entries away from the first coordinate and its
+diagonal.  The negative entries therefore form a simple two-regular graph on
+five vertices, hence a pentagon.  All pentagons are relabelled copies of one
+another; complementing the pentagon gives the opposite switching class.
+The natural six-point \(A_5\)-action preserves this class, and its two
+orientations give opposite triangle cubics on the augmentation.  More
+precisely, the automorphism group of an oriented order-six conference class
+is the transitive \(A_5\).  Identify it with the recovered
+\(G\leq S(\widehat X_M)\).  Two such identifications differ through
+\[
+ N_{S_6}(G)/G\cong C_2,
+\]
+and the nontrivial coset exchanges the class with its opposite.  Hence the
+unordered opposite pair, and therefore its projective triangle-cubic line,
+is intrinsic to the fixed recovered \(G\)-set.  This classical uniqueness
+and pentagon representative also appear in
+Bussemaker--Mathon--Seidel
+\cite[pp.~12, 21, and Table~9 on p.~83]{BMS1979}; our switching
+convention follows Goethals--Seidel \cite[\S\S1--3]{GoethalsSeidel1967}.
+\end{proof}
+
+Paper~I's corollary \emph{Nodes, symmetry, and integral commutant} proves
+that this triangle cubic has exactly six ordinary nodes in projective-frame
+position \cite{RuddRigidity2026}.  Since \(H_M\)
+is singular along a curve, the two projective cubic lines are distinct.  This
+completes Theorem~\ref{thm:chordal-axis-reconstruction}.
+
+\section{The marked companion pencil}
+\label{sec:pencil}
+
+Use the reconstructed identification of Theorem
+\ref{thm:chordal-axis-reconstruction} to transport \(W_5\) and \([H_M]\)
+to the augmentation \(A_M\).
+The character formula for a symmetric cube gives
+\[
+ \dim\bigl(\Sym^3(A_M^*)^G\bigr)=2.
+\]
+Thus \(C_M\) and \(H_M\), already known to be independent, span the full
+invariant pencil.  Take the odd normalizer permutation
+\((3\ 4\ 5\ 6)\) on the six axes.  In the basis \(e_i-e_6\), its
+augmentation matrix is
+\[
+ Q=\begin{pmatrix}
+ 1&0&0&0&0\\
+ 0&1&0&0&0\\
+ -1&-1&-1&-1&-1\\
+ 0&0&1&0&0\\
+ 0&0&0&1&0
+ \end{pmatrix}.
+\]
+Substitution of \(Q\) in the two complete coefficient vectors gives
+\[
+ C_M\longmapsto-C_M,\qquad H_M\longmapsto8C_M+H_M.
+\]
+Every other odd normalizer element differs from this one by an element of
+\(G\), which fixes the invariant pencil pointwise.  This proves
+Proposition~\ref{prop:outer-pencil-action}.  A direct Jacobian
+calculation gives the visible rational singular members
+\[
+\begin{array}{c@{\qquad}c@{\qquad}c}
+\lbrack1:0\rbrack&6&A_5/D_5,\\
+\lbrack1:3\rbrack&10&A_5/S_3,\\
+\lbrack0:1\rbrack,\ \lbrack1:7\rbrack&12&A_5/C_5.
+\end{array}
+\]
+The last two entries count the rational points on two singular quartics; they
+are not twelve-node cubics.
+
+\begin{proof}[Proof of Theorem~\ref{thm:marked-oriented-round-trip}]
+On the ordered basis \((C_M,H_M)\), the calculation above gives
+\[
+ q=\begin{pmatrix}-1&8\\0&1\end{pmatrix}.
+\]
+Thus the \((-1)\)-eigenspace is exactly \(\F_{11}C_M\), while
+\(\Delta H_M=8C_M\ne0\).  Since each chordal line is one-dimensional,
+\(\Delta\) restricts to an isomorphism from the selected line to the
+conference line.  The other chordal line is \(qL\); applying \(q^2=1\) on
+\(\mathcal I\) shows that \(\Delta\) is nonzero there as well.  The displayed
+forward and reverse formulas are therefore defined and are inverse.
+Linearity gives \(\Delta(-h)=-\Delta h\), proving compatibility with sheet
+and conference reversal.  Finally, replacing the odd representative \(q\)
+by \(gq\), with \(g\in G\), changes nothing on \(\mathcal I\), because every
+element of \(G\) fixes that space pointwise.
+\end{proof}
+
+\begin{remark}[Unmarked boundary]
+\label{rem:unmarked-boundary}
+The oriented round trip is exact at its stated marked level.  If the selected
+chordal line \(L\) is forgotten, the conference package retains only the
+unordered pair \(\{L,qL\}\); it cannot choose one member.  Thus Papers I and
+III enter the round trip only relative to a declared companion marking,
+whereas Paper II supplies that marking through its projected tensor.
+\end{remark}
+
+\section{The three marked transports and their return}
+\label{sec:three-transports}
+
+We now state exactly what the round trip returns to each earlier paper.  A
+\emph{marked companion package} is
+\[
+ \mathcal P=(X,\rho:G\hookrightarrow S_X,A_X,L,h,c),
+ \qquad c=8^{-1}(q-1)h,
+\]
+where \(S_X\) is the symmetric group of \(X\), \(A_X\) is the augmentation
+of the marked six-set,
+\(L=\F_{11}h\) is one selected chordal line, and \(c\) is the normalized
+conference generator.  We allow exactly the relabellings declared in the
+source papers; signs and scales not quotiented there remain part of the
+data.  Thus simultaneous negation \((h,c)\mapsto(-h,-c)\) is the orientation
+involution, not a relabelling.  Recording \(X\) also transports the
+normalizer coset defining \(q\).  For Paper~III, every component of
+\(\mathfrak m_{\mathrm{III}}\) remains marked, including the ordered axes,
+chart lift and its scale, outer/Petersen labels, and cross-identification.
+
+For Paper II, the bridge marking includes the deterministic normalized
+intertwiner \(T\) of Section~\ref{sec:projection}; this is what transports an
+actual sheet generator, rather than only its projective line, to \(A\).
+The coefficient normalization \(3^{-1}\) is part of this fixed bridge
+convention and is transported with it; it is not recomputed after a
+relabelling.
+Papers I and III instead begin with a conference signing and must add the
+choice of \(L\).  Their sign matrices have entries \(\{\pm1\}\), so reduction
+modulo eleven and lifting back to signs are inverse; no integral lattice is
+being inferred from equality of abstract rational algebras.
+
+\begin{corollary}[Source-by-source marked return]
+\label{cor:source-by-source-return}
+Relative to the markings in the following table, each of Papers I--III maps
+to the corresponding decorated marked companion package and is recovered
+from it at exactly the stated output level.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}>{\centering\arraybackslash}p{0.07\textwidth}
+  >{\raggedright\arraybackslash}p{0.32\textwidth}
+  >{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
+\toprule
+paper & retained source output & target decoration & inverse returns\\
+\midrule
+I & conference switching class, axis carrier, orientation, and selected
+  chordal line \(L\) & the marked core \(\mathcal P\) & the same class,
+  carrier, orientation, and \(L\), modulo switching and relabelling\\
+II & five-isotypic projected tensor with chosen sheet sign, marked axes, and
+  \(T\) & \(W_5,T\), and the fixed scalar convention & the same projected
+  tensor, sheet sign, six-axis carrier, and \(T\)\\
+III & relative conference source, selected \(L\), and full bridge datum &
+  \(\mathfrak m_{\mathrm{III}}\) & the same relative conference source,
+  orientation, \(L\), and bridge datum\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The table records the extra marking carried through each transport and the
+output recovered by its inverse.  Every forward and inverse construction is
+equivariant under the allowed relabellings.  Hence, for every source package
+arising from Papers~I--III with the stated marking, forward followed by
+inverse recovers the source output, and inverse followed by forward recovers
+the marked companion package.  No inverse is claimed outside this image.
+\end{corollary}
+
+\begin{proof}
+Paper I's \emph{Support cubic and golden continuation} and its stable
+six-node corollary recover the conference signing, orientation, and axis
+carrier \cite{RuddRigidity2026}.  Paper III's
+\emph{Relative marked orientation bridge} supplies the same conference
+source relative to its explicitly declared bridge datum
+\cite{RuddPassages2026}.  Given the added line \(L\), Theorem
+\ref{thm:marked-oriented-round-trip} recovers the unique \(h\in L\) satisfying
+\((q-1)h=8c\).  Returning forgets that derived generator and leaves every
+source output unchanged; the base marking was never forgotten.
+
+For Paper II, \emph{Balanced sheets and cubic-first orientation} supplies
+the signed generator, and Theorem~\ref{thm:chordal-axis-reconstruction}
+recovers the axis carrier.  Theorem~\ref{thm:marked-oriented-round-trip}
+then gives \(c\).  The reverse formula recovers the same \(h\).  In the
+notation of Section~\ref{sec:projection}, the exact forward and reverse
+tensor maps are
+\[
+ h=3^{-1}\operatorname{Pol}\!\left(\Sym^3(BT^{-1})\nu\right),
+ \qquad
+ \nu=\Sym^3(TB^{-1})\operatorname{Pol}^{-1}(3h).
+\]
+Thus the pivot normalization, polynomialization, self-duality, and
+intertwiner are all undone.  Axis relabellings induce every map in these
+formulas, so the formulas are equivariant.  The asserted returns are
+therefore the displayed inverse formulas together with the stable recovery
+statements just cited.
+\end{proof}
+
+The corollary deliberately returns neither the full Paper-II quotient nor
+the global Paper-III cover.  Paper III's chart lift is carried unchanged
+inside its fixed bridge datum; it is not reconstructed from the companion
+core.  Paper IV remains the independent minimum-word reconstruction branch
+and does not enter these transports.
+
+\begin{corollary}[Stabilizer-stratified base change]
+\label{cor:stabilizer-stratified-base-change}
+Let \(K/\F_{11}\) be any field extension, and base-change the fixed marked
+Paper-II package to \(K\).  Put \(R_K=\Sing(H_{M,K})\), and for \(P\leq G\)
+write \(R_K^P\) for its fixed-point subscheme.  Then
+\[
+ Z_{5,K}=\coprod_{P\in\operatorname{Syl}_5(G)}R_K^P
+\]
+is split finite \(\acute{e}\)tale of degree twelve.  Its geometric points
+have exact stabilizer \(C_5\), and the normalizer map is a canonical
+\(G\)-equivariant double cover
+\[
+ Z_{5,K}\longrightarrow
+ \operatorname{Syl}_5(G)_K\cong(A_5/D_5)_K.
+\]
+Here \(\operatorname{Syl}_5(G)_K\) is the constant \(K\)-scheme on the six
+Sylow \(5\)-subgroups.
+Its six fibres recover the base-changed axis carrier.  The invariant pencil,
+the marked \(q-1\) correspondence, and the Paper-II tensor forward and
+reverse maps commute with this base change and with every further extension
+of \(K\).
+\end{corollary}
+
+\begin{proof}
+Since \(11\nmid60\), the Reynolds idempotent splits invariants, so
+\[
+ \bigl(\Sym^3(A_M^*)^G\bigr)\otimes_{\F_{11}}K
+ \cong \Sym^3(A_{M,K}^*)^G.
+\]
+The invariant pencil therefore remains two-dimensional.  The coefficient
+identity with the Hankel determinant and the equality of its saturated
+Jacobian scheme with the rational normal quartic are identities over
+\(\F_{11}\); flat base change gives \(R_K\) scheme-theoretically.
+
+The action of each Sylow \(5\)-subgroup on \(R\) is split over \(\F_{11}\)
+and tame.  A generator has two distinct eigenlines on \(R\cong\PP^1\), so
+its fixed-point subscheme is reduced, split, and has degree two.  The
+stabilizer argument proving the axis-compatibility clause of
+Theorem~\ref{thm:chordal-axis-reconstruction} shows that the six fixed pairs
+are disjoint and that every one of their points has exact stabilizer that
+Sylow subgroup.  Thus \(Z_{5,K}\) is the scalar extension of the constant
+\(\F_{11}\)-scheme \((G/C_5)_{\F_{11}}\).  The map
+\((G/C_5)_K\to (G/N_G(C_5))_K=(G/D_5)_K\) is finite of degree two and also
+commutes with base change.  Finally, the pencil matrix, the two tensor formulas, and their
+composites are matrix identities over \(\F_{11}\); the scalars \(3\) and
+\(8\) remain units in \(K\).  Hence the marked \(q-1\) inverse and the
+Paper-II tensor inverse remain exact.
+\end{proof}
+
+This does not create a new matching problem on
+\(\PP^1(\F_{11^m})\).  Indeed, the whole singular quartic has
+\(11^m+1\) rational points over \(\F_{11^m}\); the intrinsic selector is the
+fixed degree-twelve scheme \(Z_{5,\F_{11^m}}\), not the full rational locus.
+
+\section{Verification and trust boundary}
+\label{sec:verification}
+
+The transport matrices and coefficient identities are finite
+computer-assisted leaves of the proof.  The paper-owned standard-library
+checker
+\begin{center}
+\small\ttfamily
+verification/evidence/paper\_ii\_chordal\_axis.py
+\end{center}
+has schema \texttt{paper-v-chordal-axis-v2}.  It reconstructs the matching
+quotient from Paper II's frozen arithmetic, computes the central projector
+and both intertwiner spaces, checks all cubic coefficients, enumerates the
+rational singular loci, and determines the pencil action.  Its exact output
+is the adjacent JSON file.  From the repository root, the replay is
+\begin{center}
+\small
+\verb|python3 verification/evidence/|\\
+\verb|paper_ii_chordal_axis.py --check|
+\end{center}
+and returns \texttt{CHECK OK (NO\_MATCH)}; \texttt{NO\_MATCH} is the proved
+failure of the literal conference-line identification, not a failed check.
+The JSON names, sizes, and hashes both frozen inputs.  Their SHA-256 values
+begin \texttt{d2100485} for the matching-module source and
+\texttt{d45512c9} for the orbit-scout data; the unabbreviated values are part
+of the machine-readable proof interface.
+A separately written cold replay reproduced the normalized coefficient
+vector; its full byte SHA-256 is recorded in the adjacent JSON certificate.
+Neither execution substitutes for Lemma~\ref{lem:hankel-singular-locus} or
+the stabilizer argument proving the axis-compatibility clause of
+Theorem~\ref{thm:chordal-axis-reconstruction}.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Paper II's cubic shadow reaches the golden six-axis carrier without being
+the conference cubic.  Projection gives a chordal cubic; its singular
+quartic gives twelve points; exact stabilizers pair them into the original
+six axes.  The conference and chordal members thus retain one carrier through
+different singular shadows.  On their invariant pencil, \(q-1\) carries the
+selected sheet generator to the conference orientation and is invertible on
+either selected chordal line.  The oriented return is exact, but the
+companion choice is irreducible: an unmarked conference package remembers
+the pair of chordal lines without selecting one.
+
+\section*{AI assistance disclosure}
+
+This project was developed with extensive assistance from OpenAI Codex and
+Anthropic Claude. Under the author's direction, the systems assisted with
+proof exploration, literature research, exact computation, verification,
+and manuscript drafting and revision. The author checked the resulting
+arguments, computations, code, and cited sources, reviewed and edited all
+AI-assisted material, and assumes responsibility for all content.
+
+\begin{thebibliography}{9}
+
+\bibitem{BMS1979}
+F.~C. Bussemaker, R.~A. Mathon, and J.~J. Seidel,
+\newblock \emph{Tables of two-graphs},
+\newblock EUT Report 79-WSK-05, Technische Hogeschool Eindhoven (1979),
+doi:10.1007/BFb0092256.
+
+\bibitem{CheltsovEtAl2025Chordal}
+I.~Cheltsov, L.~Marquand, Y.~Tschinkel, and Z.~Zhang,
+\newblock Equivariant geometry of cubic threefolds with non-isolated
+singularities,
+\newblock preprint (2025), arXiv:2505.03986.
+
+\bibitem{GoethalsSeidel1967}
+J.-M. Goethals and J.~J. Seidel,
+\newblock Orthogonal matrices with zero diagonal,
+\newblock \emph{Canadian Journal of Mathematics} \textbf{19} (1967),
+1001--1010, doi:10.4153/CJM-1967-091-8.
+
+\bibitem{HMSVOuter}
+B.~Howard, J.~Millson, A.~Snowden, and R.~Vakil,
+\newblock A description of the outer automorphism of \(S_6\), and the
+invariants of six points in projective space,
+\newblock \emph{Journal of Combinatorial Theory, Series A} \textbf{115}
+(2008), 1296--1303, doi:10.1016/j.jcta.2008.01.004.
+
+\bibitem{PinardinZhang2025}
+A.~Pinardin and Z.~Zhang,
+\newblock \(A_5\)-equivariant geometry of quadric threefolds,
+\newblock preprint (2025), arXiv:2508.11496v1.
+
+\bibitem{RuddFactorization2026}
+T.~Rudd,
+\newblock Quadratic trade rigidity and cubic orientation in conic matching
+quotients,
+\newblock preprint (2026).
+
+\bibitem{RuddRigidity2026}
+T.~Rudd,
+\newblock Reconstructing the Clebsch code and its golden orientation from its
+deep-hole syndrome locus,
+\newblock preprint (2026).
+
+\bibitem{RuddPassages2026}
+T.~Rudd,
+\newblock Golden descent and operator realizations of the Clebsch cubic,
+\newblock preprint (2026).
+
+\end{thebibliography}
+
+\end{document}

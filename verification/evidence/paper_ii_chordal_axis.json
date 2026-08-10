@@ -1,0 +1,514 @@
+{
+  "a5_invariant_conference_cubic_line_count": 1,
+  "a5_invariant_conference_gauge_count": 2,
+  "a5_invariant_cubic_dimension": 2,
+  "axis_to_quotient_hom_dimension": 1,
+  "base_matching": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "conference_gauge_count": 12,
+  "conference_triangle_cubic": [
+    0,
+    1,
+    1,
+    10,
+    10,
+    1,
+    2,
+    9,
+    2,
+    1,
+    2,
+    9,
+    10,
+    9,
+    10,
+    0,
+    10,
+    10,
+    1,
+    10,
+    9,
+    9,
+    10,
+    2,
+    1,
+    0,
+    1,
+    10,
+    1,
+    2,
+    10,
+    0,
+    1,
+    1,
+    0
+  ],
+  "conference_triangle_cubic_f11_singular_points": {
+    "equal_stabilizer_fibre_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "point_count": 6,
+    "stabilizer_orders": [
+      10
+    ],
+    "transitive": true
+  },
+  "field": 11,
+  "five_constituent_projector_rank": 5,
+  "inputs": {
+    "a5_subgroup_decoder.py": {
+      "bytes": 16785,
+      "sha256": "58323770acf22c7005f381b34c601e4214c62f06d063d01dbd68cdc533f659b5"
+    },
+    "common_duality.json": {
+      "bytes": 7428,
+      "sha256": "9ada388cb5dfc118e865a5122a530f9cb8380e372ecebd9931272f7dfbfd1037"
+    },
+    "common_duality.py": {
+      "bytes": 12364,
+      "sha256": "5de4b17bdf49499625da05a869cf9228993007712c7ade56945f0c0b9e75776c"
+    },
+    "coxeter_conic_phase.py": {
+      "bytes": 26171,
+      "sha256": "943de37568b1546b06a8940f93a2b525abd69b6047f8ebb7c6c18704ac6e2c0a"
+    },
+    "decorated_parent.json": {
+      "bytes": 43983,
+      "sha256": "82a9c36a5b3d1877f472ae311902782386b09e5d7a99ad5d800b5dc225d2b77c"
+    },
+    "decorated_parent_replay.py": {
+      "bytes": 14715,
+      "sha256": "a26061f5da1d89dc90371103536402ee41ca3dc67a71c97fcf40418233a3007f"
+    },
+    "deep_hole_transform.json": {
+      "bytes": 30368,
+      "sha256": "a1755b0baf1067b2353a1be97218fa3d85daa4fa23bfb051ea642da833f1c3bb"
+    },
+    "h3_arithmetic_phase.json": {
+      "bytes": 4188,
+      "sha256": "c7493899d2d9ebe8d5679bca668cd2708fbddae59a2db5ab8ccd7c350d7fc561"
+    },
+    "h3_good_reduction.json": {
+      "bytes": 3532,
+      "sha256": "af8798d14ca790a09da5e4a5cdd9d141161baa695162158bf91c503e881cb923"
+    },
+    "matching_module.py": {
+      "bytes": 48643,
+      "sha256": "d2100485add18a92a148f0584d41b2108100baf545fd361e6cc08b7e61e92f40"
+    },
+    "matching_orbit_scout.json": {
+      "bytes": 25385,
+      "sha256": "d45512c9087874acdaf109367753f45151c2dd0c2cb745777f62ad26489e7394"
+    }
+  },
+  "intertwiner": [
+    [
+      2,
+      9,
+      7,
+      6,
+      4
+    ],
+    [
+      0,
+      9,
+      10,
+      10,
+      6
+    ],
+    [
+      5,
+      1,
+      9,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      10,
+      1,
+      6
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "invariant_pencil_singular_census": [
+    {
+      "f11_orbit_record": {
+        "equal_stabilizer_fibre_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "point_count": 6,
+        "stabilizer_orders": [
+          10
+        ],
+        "transitive": true
+      },
+      "f11_singular_point_count": 6,
+      "projective_parameter": [
+        1,
+        0
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        1
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        2
+      ]
+    },
+    {
+      "f11_orbit_record": {
+        "equal_stabilizer_fibre_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "point_count": 10,
+        "stabilizer_orders": [
+          6
+        ],
+        "transitive": true
+      },
+      "f11_singular_point_count": 10,
+      "projective_parameter": [
+        1,
+        3
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        4
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        5
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        6
+      ]
+    },
+    {
+      "f11_orbit_record": {
+        "equal_stabilizer_fibre_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "point_count": 12,
+        "stabilizer_orders": [
+          5
+        ],
+        "transitive": true
+      },
+      "f11_singular_point_count": 12,
+      "projective_parameter": [
+        1,
+        7
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        8
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        9
+      ]
+    },
+    {
+      "f11_orbit_record": null,
+      "f11_singular_point_count": 0,
+      "projective_parameter": [
+        1,
+        10
+      ]
+    },
+    {
+      "f11_orbit_record": {
+        "equal_stabilizer_fibre_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "point_count": 12,
+        "stabilizer_orders": [
+          5
+        ],
+        "transitive": true
+      },
+      "f11_singular_point_count": 12,
+      "projective_parameter": [
+        0,
+        1
+      ]
+    }
+  ],
+  "matching_matrices": [],
+  "outer_normalizer_pencil_action": {
+    "basis": [
+      "conference",
+      "paper_ii_chordal"
+    ],
+    "conference_image_coordinates": [
+      10,
+      0
+    ],
+    "exchanged_chordal_parameters": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "fixed_conference_parameter": [
+      1,
+      0
+    ],
+    "fixed_ten_point_parameter": [
+      1,
+      3
+    ],
+    "outer_axis_permutation": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      2
+    ],
+    "paper_ii_chordal_image_coordinates": [
+      8,
+      1
+    ],
+    "projective_parameter_action": "[a:b] -> [-a+8b:b]"
+  },
+  "projected_and_conference_span_dimension": 2,
+  "projected_sheet_cubic": [
+    0,
+    1,
+    1,
+    9,
+    9,
+    1,
+    2,
+    7,
+    2,
+    1,
+    2,
+    7,
+    9,
+    7,
+    9,
+    0,
+    9,
+    9,
+    1,
+    9,
+    7,
+    7,
+    9,
+    2,
+    1,
+    0,
+    1,
+    9,
+    1,
+    2,
+    9,
+    0,
+    1,
+    1,
+    0
+  ],
+  "projected_sheet_cubic_chordal_identification": {
+    "axis_action_normalizer_order": 120,
+    "direct_hankel_match": false,
+    "direct_intertwiner_dimension": 1,
+    "direct_veronese_curve_match": false,
+    "f11_rational_points": 12,
+    "hankel_scale": 8,
+    "outer_twisted_intertwiner_dimension": 1,
+    "projectivity": [
+      [
+        0,
+        0,
+        3,
+        5,
+        3
+      ],
+      [
+        4,
+        1,
+        1,
+        10,
+        4
+      ],
+      [
+        3,
+        6,
+        3,
+        0,
+        0
+      ],
+      [
+        5,
+        1,
+        6,
+        10,
+        5
+      ],
+      [
+        9,
+        10,
+        10,
+        7,
+        1
+      ]
+    ],
+    "singular_curve": "rational normal quartic",
+    "standard_equation": "det[[z0,z1,z2],[z1,z2,z3],[z2,z3,z4]]"
+  },
+  "projected_sheet_cubic_f11_singular_points": {
+    "equal_stabilizer_fibre_sizes": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "point_count": 12,
+    "stabilizer_orders": [
+      5
+    ],
+    "transitive": true
+  },
+  "projected_sheet_cubic_normalization_pivot": 3,
+  "projected_sheet_cubic_normalized_byte_sha256": "c854b0500d67bc25c486a01b1be5ad9e82cf5cf71bac04c06f5f4eb9cf5acaed",
+  "projected_sheet_cubic_raw": [
+    0,
+    3,
+    3,
+    5,
+    5,
+    3,
+    6,
+    10,
+    6,
+    3,
+    6,
+    10,
+    5,
+    10,
+    5,
+    0,
+    5,
+    5,
+    3,
+    5,
+    10,
+    10,
+    5,
+    6,
+    3,
+    0,
+    3,
+    5,
+    3,
+    6,
+    5,
+    0,
+    3,
+    3,
+    0
+  ],
+  "projective_line_match_count": 0,
+  "schema": "paper-v-chordal-axis-v2",
+  "scope": "exact finite-field reconnaissance; naturality and inverse are not proved here",
+  "verdict": "NO_MATCH"
+}

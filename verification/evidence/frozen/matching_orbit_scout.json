@@ -1,0 +1,1498 @@
+{
+  "gate_1_summary": {
+    "gate_2_authorized_by_gate_1": true,
+    "gate_2_executed": false,
+    "orbit_alone_adds_structure_beyond_parent_subgroup": false,
+    "reason": "For every type the matching stabilizer and the parent normalizer are exactly the same classical S4/S4/A5 subgroup, so the 5/14/22 matching orbit alone is the same homogeneous parent-marker space PGL2(q)/G_T with a renamed point. This does not decide the restricted augmentation module required by Gate 2.",
+    "uniform_child_side_construction": "unique Coxeter-parent-invariant perfect matching",
+    "unique_target_orbits": true
+  },
+  "inputs": {
+    "decorated_parent_replay.py": {
+      "bytes": 14727,
+      "sha256": "515d45ee2a30a9381c446c035ff7cea7ae4c919faa1a3d3db205ee40a6e522f8"
+    },
+    "decorated_parent.json": {
+      "bytes": 43991,
+      "sha256": "3cc3a7008d91a06f95504cbced7adc2eef9b304355a3a56bb64bdd0bea19ad8d"
+    },
+    "coxeter_conic_phase.py": {
+      "bytes": 25983,
+      "sha256": "f90f8bf9ef85667ffeb937c4b3f07c54407edcfc965fb4cf9b45f7f854097275"
+    }
+  },
+  "schema": "matching-matching-orbit-scout-v1",
+  "types": [
+    {
+      "all_orbits": [
+        {
+          "orbit_size": 5,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "stabilizer_order": 24
+        },
+        {
+          "orbit_size": 10,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "stabilizer_order": 12
+        }
+      ],
+      "common_form_is_s_q_t_minus_s_t_q": true,
+      "common_restricted_form": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "conic_points": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "conjugate_parent_subgroup_count": 5,
+      "coxeter_invariant_matching": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "coxeter_invariant_matching_count": 1,
+      "coxeter_parent_normalizer_order": 24,
+      "coxeter_parent_order": 24,
+      "factorization_products_checked": 15,
+      "field_order": 5,
+      "full_pgl_order": 120,
+      "matches_frozen_decorated_obstruction_matching": null,
+      "matching_stabilizer_equals_parent_subgroup": true,
+      "outer_coset_exchanges_sheets": false,
+      "p1_endpoints": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "parent_subgroup_to_matching_is_bijective": true,
+      "perfect_matching_count": 15,
+      "psl_orbits_are_one_factorizations": true,
+      "psl_order": 60,
+      "psl_target_orbit_sizes": [
+        5
+      ],
+      "target_orbit_edge_multiplicity": 1,
+      "target_orbit_size": 5,
+      "type": "A3"
+    },
+    {
+      "all_orbits": [
+        {
+          "orbit_size": 14,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "stabilizer_order": 24
+        },
+        {
+          "orbit_size": 21,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "stabilizer_order": 16
+        },
+        {
+          "orbit_size": 28,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "stabilizer_order": 12
+        },
+        {
+          "orbit_size": 42,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "stabilizer_order": 8
+        }
+      ],
+      "common_form_is_s_q_t_minus_s_t_q": true,
+      "common_restricted_form": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      "conic_points": [
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          3
+        ]
+      ],
+      "conjugate_parent_subgroup_count": 14,
+      "coxeter_invariant_matching": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "coxeter_invariant_matching_count": 1,
+      "coxeter_parent_normalizer_order": 24,
+      "coxeter_parent_order": 24,
+      "factorization_products_checked": 105,
+      "field_order": 7,
+      "full_pgl_order": 336,
+      "matches_frozen_decorated_obstruction_matching": null,
+      "matching_stabilizer_equals_parent_subgroup": true,
+      "outer_coset_exchanges_sheets": true,
+      "p1_endpoints": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "parent_subgroup_to_matching_is_bijective": true,
+      "perfect_matching_count": 105,
+      "psl_orbits_are_one_factorizations": true,
+      "psl_order": 168,
+      "psl_target_orbit_sizes": [
+        7,
+        7
+      ],
+      "target_orbit_edge_multiplicity": 2,
+      "target_orbit_size": 14,
+      "type": "B3"
+    },
+    {
+      "all_orbits": [
+        {
+          "orbit_size": 22,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 60
+        },
+        {
+          "orbit_size": 55,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 24
+        },
+        {
+          "orbit_size": 55,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "stabilizer_order": 24
+        },
+        {
+          "orbit_size": 66,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "stabilizer_order": 20
+        },
+        {
+          "orbit_size": 110,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 12
+        },
+        {
+          "orbit_size": 110,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 12
+        },
+        {
+          "orbit_size": 110,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              9
+            ]
+          ],
+          "stabilizer_order": 12
+        },
+        {
+          "orbit_size": 132,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "stabilizer_order": 10
+        },
+        {
+          "orbit_size": 165,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "stabilizer_order": 8
+        },
+        {
+          "orbit_size": 165,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "stabilizer_order": 8
+        },
+        {
+          "orbit_size": 165,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "stabilizer_order": 8
+        },
+        {
+          "orbit_size": 220,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 6
+        },
+        {
+          "orbit_size": 220,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 6
+        },
+        {
+          "orbit_size": 220,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "stabilizer_order": 6
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 330,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "stabilizer_order": 4
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "stabilizer_order": 2
+        },
+        {
+          "orbit_size": 660,
+          "representative": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "stabilizer_order": 2
+        }
+      ],
+      "common_form_is_s_q_t_minus_s_t_q": true,
+      "common_restricted_form": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "conic_points": [
+        [
+          1,
+          10,
+          8
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          3,
+          10
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          7,
+          4
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          7,
+          7
+        ],
+        [
+          1,
+          1,
+          8
+        ],
+        [
+          1,
+          10,
+          3
+        ]
+      ],
+      "conjugate_parent_subgroup_count": 22,
+      "coxeter_invariant_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "coxeter_invariant_matching_count": 1,
+      "coxeter_parent_normalizer_order": 60,
+      "coxeter_parent_order": 60,
+      "factorization_products_checked": 10395,
+      "field_order": 11,
+      "full_pgl_order": 1320,
+      "matches_frozen_decorated_obstruction_matching": true,
+      "matching_stabilizer_equals_parent_subgroup": true,
+      "outer_coset_exchanges_sheets": true,
+      "p1_endpoints": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "parent_subgroup_to_matching_is_bijective": true,
+      "perfect_matching_count": 10395,
+      "psl_orbits_are_one_factorizations": true,
+      "psl_order": 660,
+      "psl_target_orbit_sizes": [
+        11,
+        11
+      ],
+      "target_orbit_edge_multiplicity": 2,
+      "target_orbit_size": 22,
+      "type": "H3"
+    }
+  ],
+  "verdict": "GATE_1_PASS_UNIFORM_MATCHING_INTERFACE_MODULE_UNDECIDED"
+}

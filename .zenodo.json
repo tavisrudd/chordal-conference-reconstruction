@@ -1,0 +1,26 @@
+{
+  "title": "The Golden Companion Correspondence",
+  "description": "Paper II of the Clebsch: Rigidity from Sparse Shadows series produces a signed cubic from a matching quotient. This preprint identifies its canonical five-dimensional residue as a chordal companion, distinct from the conference cubic reconstructed in Papers I and III but lying in the same two-dimensional A5-invariant pencil. The chordal cubic is singular along a rational normal quartic. Its twelve F_11-points form A5/C5, and pairing points with equal stabilizer recovers the original six-axis carrier A5/D5. The normalized outer action gives an exact oriented round trip between a selected chordal line and the conference line, with all labels, scalars, and source-return boundaries retained.",
+  "creators": [
+    {
+      "name": "Rudd, Tavis",
+      "orcid": "0009-0003-6405-3275",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "keywords": [
+    "icosahedral invariants",
+    "chordal cubic",
+    "rational normal quartic",
+    "conference matrix",
+    "perfect matchings",
+    "outer automorphism",
+    "equivariant reconstruction",
+    "finite geometry"
+  ],
+  "notes": "Correspondence: tavis@damnsimple.com"
+}
