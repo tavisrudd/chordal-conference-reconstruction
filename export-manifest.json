@@ -13,13 +13,13 @@
       "source_blob": null
     },
     {
-      "bytes": 1320,
+      "bytes": 1311,
       "mode": "100644",
       "path": ".zenodo.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "a2271a2f1364b0c8b741b57be3ecc2fb98da8f04bd636b9586d65193a9394ee3",
-      "source_blob": "dc3e6ae895880d8f2aa78a3a4ff420955952e3c3"
+      "sha256": "a0026fa6573535cef7a2d7ccee5967bd6c009a118477b80325a204d343bbc2a3",
+      "source_blob": "db3d19f7509e1b1b1a7a010e3a94fdb3515d1141"
     },
     {
       "bytes": 470,
@@ -31,7 +31,7 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 777,
+      "bytes": 831,
       "mode": "100644",
       "path": "Makefile",
       "rewrites": [
@@ -56,36 +56,54 @@
         {
           "expected_count": 1,
           "new": "",
-          "old": "lint:\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n\n",
+          "old": "lint:\n\t$(PYTHON) ../scripts/lint_tex_spacing.py $(SOURCE)\n\n",
           "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
         },
         {
           "expected_count": 1,
           "new": "manuscript: $(SOURCE)\n",
-          "old": "manuscript: $(SOURCE)\n\tpython3 ../scripts/lint_tex_spacing.py $(SOURCE)\n",
+          "old": "manuscript: $(SOURCE)\n\t$(PYTHON) ../scripts/lint_tex_spacing.py $(SOURCE)\n",
           "reason": "the monorepo-wide TeX lint helper is outside the standalone repository boundary"
         }
       ],
       "role": "support",
-      "sha256": "90c6966b7ce41338c51354d39cba6de2c042cc4af6c176a15d4a4a62dd2af012",
-      "source_blob": "acdf2462712d1c45cfcf072b0cb79bc1494668bb"
+      "sha256": "c1c0d782434ae8b5a589793312ba301d35650776033c32e3c6cc0897e68193fe",
+      "source_blob": "a4b48088483718a999c2fd53289ea6362c814f7e"
     },
     {
-      "bytes": 312,
+      "bytes": 314,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "1ac1ead218205e78cdec0e02b3fa4f74d117ad6ab165a4584f32f38d25d38daf",
+      "sha256": "08f1f16a94cf17262ac58e319e9a966cbd02cdd03c189534bc92b498202d7275",
       "source_blob": null
     },
     {
-      "bytes": 1875,
+      "bytes": 2577,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "f8ab92910e59a5bb72c38cf29876062bc6269622bf30fd5a548b492dbf1353f4",
-      "source_blob": "bed2c3ef166092888acdeccba08c3b3c94c7b889"
+      "sha256": "7907861d6013a9d6a34034529261a47ab83c3d8b4eb339f68e5f403f22214902",
+      "source_blob": "ef13aa7dfb4a9a48e5e26220ae3e93db9ac1535d"
+    },
+    {
+      "bytes": 185157,
+      "mode": "100644",
+      "path": "chordal_conference_reconstruction.pdf",
+      "rewrites": [],
+      "role": "release-output",
+      "sha256": "b33cf0d765f9aeabc392b5af0a520e1171f51656837ace1fb2ad74429121f2b1",
+      "source_blob": "10681e7b5c2c96ac99880bc948224719e45f7c1a"
+    },
+    {
+      "bytes": 68159,
+      "mode": "100644",
+      "path": "chordal_conference_reconstruction.tex",
+      "rewrites": [],
+      "role": "manuscript-source",
+      "sha256": "0a42e0e6f987dc8ae6685f1e3300cd357603d992ff502f49b33f3ec2bfda9c60",
+      "source_blob": "c54e6095c1570f6cbb199c5f711aa627f958551c"
     },
     {
       "bytes": 567,
@@ -106,31 +124,13 @@
       "source_blob": "c8be986d73ee5a9322cb03ba543fc98e3afac874"
     },
     {
-      "bytes": 121464,
-      "mode": "100644",
-      "path": "golden_companion_reconstruction.pdf",
-      "rewrites": [],
-      "role": "release-output",
-      "sha256": "d2b63db69975ba71158a086c0a072514cd398c613219d0ff947f7dfc517d21c4",
-      "source_blob": "ddebaf53d16f042e0262867299534ca626cfec63"
-    },
-    {
-      "bytes": 36966,
-      "mode": "100644",
-      "path": "golden_companion_reconstruction.tex",
-      "rewrites": [],
-      "role": "manuscript-source",
-      "sha256": "44af9cb129cb122304ac0aa946b590f815f8c2de9e68e1395bfe433c3d6685a2",
-      "source_blob": "96f60555773b17ad0bdcb53401306b98fdc28b70"
-    },
-    {
-      "bytes": 1114,
+      "bytes": 1270,
       "mode": "100644",
       "path": "verification/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "134c191ab3cdfa750b525e2cd619c158f42194a30e65d8187c9a25e144b586df",
-      "source_blob": "53840423506cf6afa691e5abd0c096a1ade9fe3a"
+      "sha256": "770ea82fabd0655805296b8db2f26e65a4bfd18e5272038a1fc97e484a0dda3c",
+      "source_blob": "7cc440b2b230a1569c331e21b242eed112259c56"
     },
     {
       "bytes": 16785,
@@ -250,36 +250,36 @@
       "source_blob": "4e8579fef959b03ddc3a5c68b96ded3100f0f094"
     },
     {
-      "bytes": 8380,
+      "bytes": 11079,
       "mode": "100644",
       "path": "verification/evidence/paper_ii_chordal_axis.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "b7e0adde2bc32c7ad7f35b4f97703c1c91a63fab7b563d2bef5a9e97962c344b",
-      "source_blob": "d7e884c151419d3fbb4aee6b002f486585ca6f17"
+      "sha256": "3dfa23bfc71bbe87fae1d51c7656a57dbf6cfcb86ac537b41120d2d76465afc1",
+      "source_blob": "b9b7b6e1396d924fe9ecc22d67cda7b99ee0a6a6"
     },
     {
-      "bytes": 27423,
+      "bytes": 27918,
       "mode": "100644",
       "path": "verification/evidence/paper_ii_chordal_axis.py",
       "rewrites": [],
       "role": "verification",
-      "sha256": "8971dabc4fd668be8ce7858e965be7ac1919405121c97605e2db4985d95a18c1",
-      "source_blob": "7ac156298dbf7f639364e6a92f22da003f81d4b3"
+      "sha256": "30c605e06e9a32b688f55a25b369ca6c904771cdf2d594e8632744e546905a81",
+      "source_blob": "9eadffb54f702d725fa8ec75b014f5a03662c4c3"
     }
   ],
-  "github": "tavisrudd/golden-companion-correspondence",
+  "github": "tavisrudd/chordal-conference-reconstruction",
   "main_sources": [
-    "golden_companion_reconstruction.tex"
+    "chordal_conference_reconstruction.tex"
   ],
   "manifest_self_excluded": true,
   "paper_ids": [
-    "golden_companion_correspondence"
+    "chordal_conference_reconstruction"
   ],
-  "paper_registry_sha256": "d49a06e2b25e828827166586dfd3aad92342119e4e38decb1a695c5ad558003c",
+  "paper_registry_sha256": "ffc21b0a2a999815d4cd30d2416f39cd4b51c578dceb8416e599e4cb3257c553",
   "release_output_policy": "legacy-unspecified",
-  "repository": "golden-companion-correspondence",
-  "repository_map_sha256": "3837472b201ebe328ee04be49f3a87f4e080d1ca771a5d95081a287017af611c",
+  "repository": "chordal-conference-reconstruction",
+  "repository_map_sha256": "2a861f5d01cb01433066950bd72b7bddb397ac5ba0a357dc236b20e9070744db",
   "schema_version": 1,
-  "source_commit": "90f3d7b784ec6654e57111a69030990a53f3c18e"
+  "source_commit": "20184be6facc3676f4e1c7be472fc79fbacaf6f9"
 }

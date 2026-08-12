@@ -244,6 +244,11 @@ def h3_data():
         "parameters": endpoints,
         "base_matching": base_matching,
         "intertwiner": intertwiner,
+        "generator_permutations": [list(element) for element in generators],
+        "generator_axis_actions": [axis_actions[element] for element in generators],
+        "generator_constituent_actions": [
+            constituent_actions[element] for element in generators
+        ],
         "projected_cubic_raw": cubic_polynomial,
         "projected_cubic_normalization_pivot": normalization_pivot,
         "projected_cubic": normalized_cubic,
@@ -642,6 +647,9 @@ def build_certificate():
         "five_constituent_projector_rank": data["projector_rank"],
         "axis_to_quotient_hom_dimension": data["hom_dimension"],
         "intertwiner": data["intertwiner"],
+        "generator_permutations": data["generator_permutations"],
+        "generator_axis_actions": data["generator_axis_actions"],
+        "generator_constituent_actions": data["generator_constituent_actions"],
         "projected_sheet_cubic": data["projected_cubic"],
         "projected_sheet_cubic_raw": data["projected_cubic_raw"],
         "projected_sheet_cubic_normalization_pivot": data[

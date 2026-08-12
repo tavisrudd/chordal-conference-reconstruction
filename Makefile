@@ -4,7 +4,8 @@ export FORCE_SOURCE_DATE = 1
 TEXSHELL ?= nix develop .\#manuscript --command
 LATEXMK ?= $(TEXSHELL) latexmk
 LATEXMK_FLAGS ?= -xelatex -interaction=nonstopmode -halt-on-error
-SOURCE := golden_companion_reconstruction.tex
+PYTHON ?= nix shell nixpkgs\#python3 -c python3
+SOURCE := chordal_conference_reconstruction.tex
 
 .PHONY: all check evidence manuscript warnings clean distclean
 
@@ -13,13 +14,13 @@ all: manuscript
 check: evidence manuscript warnings
 
 evidence:
-	python3 verification/evidence/paper_ii_chordal_axis.py --check
+	$(PYTHON) verification/evidence/paper_ii_chordal_axis.py --check
 
 manuscript: $(SOURCE)
 	$(LATEXMK) $(LATEXMK_FLAGS) $(SOURCE)
 
 warnings: manuscript
-	@if grep -En 'Overfull|Underfull|LaTeX Warning|Package .* Warning|undefined references|Citation .* undefined' golden_companion_reconstruction.log; then \
+	@if grep -En 'Overfull|Underfull|LaTeX Warning|Package .* Warning|undefined references|Citation .* undefined' chordal_conference_reconstruction.log; then \
 		exit 1; \
 	fi
 
