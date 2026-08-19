@@ -75,7 +75,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "09242b8cec1f57bcdc751035bb2133efe49910d6a62f22fad87268fa307ddebc",
+      "sha256": "e6b0a08cfe480801e518e7e6b327bb844f2e8dc72c8d02cc325b24bb9bfcb896",
       "source_blob": null
     },
     {
@@ -97,13 +97,13 @@
       "source_blob": "226860fe0dbf9e84b4d1130d39ea0f6af85568f8"
     },
     {
-      "bytes": 69186,
+      "bytes": 69169,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "48cefb38704f7b0a5410ff357bb3effcbfb2284b2dad99f6fd1399cfb0e40a37",
-      "source_blob": "2d83cc9a3426154f941442d3f6b54e032085e030"
+      "sha256": "ff6e28e9588b8bb82f49a559ea828e12b75159efd7b0d0ba33222b72479f703e",
+      "source_blob": "53a1b9e5736adad92d995155f56bddef1c401651"
     },
     {
       "bytes": 567,
@@ -281,5 +281,5 @@
   "repository": "chordal-conference-reconstruction",
   "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "1142b4bad82d93f1aeca77e1446dc85e0004cc04"
+  "source_commit": "92486f29367ea9f86e95c5f5df8ad07e952593b1"
 }
