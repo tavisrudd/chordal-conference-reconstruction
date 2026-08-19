@@ -2,7 +2,7 @@
   "excluded_path_count": 0,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
-  "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
+  "exporter_blob": "bc16a3f02957af1342e19dfe7fad78e003d8c5dc",
   "files": [
     {
       "bytes": 108,
@@ -75,7 +75,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "08f1f16a94cf17262ac58e319e9a966cbd02cdd03c189534bc92b498202d7275",
+      "sha256": "09242b8cec1f57bcdc751035bb2133efe49910d6a62f22fad87268fa307ddebc",
       "source_blob": null
     },
     {
@@ -88,22 +88,22 @@
       "source_blob": "ef13aa7dfb4a9a48e5e26220ae3e93db9ac1535d"
     },
     {
-      "bytes": 185157,
+      "bytes": 183567,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "b33cf0d765f9aeabc392b5af0a520e1171f51656837ace1fb2ad74429121f2b1",
-      "source_blob": "10681e7b5c2c96ac99880bc948224719e45f7c1a"
+      "sha256": "4fe03356c095bfdee854ff3827641fab1ae875764b04c6f9551801b2e1549000",
+      "source_blob": "226860fe0dbf9e84b4d1130d39ea0f6af85568f8"
     },
     {
-      "bytes": 68159,
+      "bytes": 69186,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "0a42e0e6f987dc8ae6685f1e3300cd357603d992ff502f49b33f3ec2bfda9c60",
-      "source_blob": "c54e6095c1570f6cbb199c5f711aa627f958551c"
+      "sha256": "48cefb38704f7b0a5410ff357bb3effcbfb2284b2dad99f6fd1399cfb0e40a37",
+      "source_blob": "2d83cc9a3426154f941442d3f6b54e032085e030"
     },
     {
       "bytes": 567,
@@ -276,10 +276,10 @@
   "paper_ids": [
     "chordal_conference_reconstruction"
   ],
-  "paper_registry_sha256": "ffc21b0a2a999815d4cd30d2416f39cd4b51c578dceb8416e599e4cb3257c553",
+  "paper_registry_sha256": "e3e739fd4bca142a8c245291c1d30125fa468718cc8351c23c2b2fc3c452e84e",
   "release_output_policy": "legacy-unspecified",
   "repository": "chordal-conference-reconstruction",
-  "repository_map_sha256": "2a861f5d01cb01433066950bd72b7bddb397ac5ba0a357dc236b20e9070744db",
+  "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "20184be6facc3676f4e1c7be472fc79fbacaf6f9"
+  "source_commit": "1142b4bad82d93f1aeca77e1446dc85e0004cc04"
 }

@@ -7,6 +7,7 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
 \usepackage{array,booktabs}
 \usepackage{enumitem}
+\usepackage{float}
 \usepackage{needspace}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
@@ -44,14 +45,7 @@ Reconstruction and a Residual \(C_2\)-Torsor}
 \date{August 2026}
 
 \begin{document}
-\begingroup
-\makeatletter
-\let\clebschmaintitle\@title
-\def\@title{\large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{V}\\[0.7em]
-  \LARGE\clebschmaintitle}
-\makeatother
 \maketitle
-\endgroup
 
 \begin{abstract}
 Different lossy invariants of the same source need not have the same
@@ -126,6 +120,7 @@ quartic.  We prove that, after one chordal line is retained, either shadow
 reconstructs the other and their common six-axis carrier.  Forgetting that
 line leaves exactly a \(C_2\)-ambiguity.  The result classifies information
 loss between inequivalent cubic shadows; it does not identify the cubics.
+The classification itself is formulated on the fixed metric carrier.
 
 The explanation has four steps.  First, the singular quartic of a chordal
 cubic contains a distinguished split \(A_5/C_5\)-orbit.  Sending each point
@@ -172,45 +167,6 @@ defect count used here.  Our claims concern the marked compatibility,
 normalization, exact information loss, and the root--weight residue obtained
 when these ingredients are composed.  We make no priority claim beyond this
 attribution boundary.
-
-\Needspace{18\baselineskip}
-\medskip
-\noindent\textbf{Reconstruction perspective.}
-Papers~I--III supply concrete sources realizing the two shadow types, but the
-classification itself is formulated on the fixed metric carrier.  Paper~IV
-supplies an independent \(C_3\)-Frobenius instance on an \(\F_8\)-commutant,
-with no common geometric carrier asserted.  Figure~\ref{fig:series-map}
-records this division.
-
-\begin{figure}[ht]
-\centering
-\begin{tikzpicture}[
-  x=1cm,y=1cm,>=Latex,
-  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
-    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
-    inner sep=2.5pt},
-  active/.style={paper,very thick,fill=black!12},
-  package/.style={paper,text width=38mm}
-]
-\node[paper]   (p1) at (0,1.45) {\textbf{I}\\conference companion};
-\node[paper]   (p2) at (0,0.35) {\textbf{II}\\chordal companion};
-\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\conference companion};
-\node[active]  (p5) at (5.25,0.35) {\textbf{V}\\marked companion correspondence};
-\node[package] (gold) at (10.5,0.35) {one six-axis carrier\\conference \(+\) chordal};
-\node[paper]   (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
-\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and an \(\F_8\)-orbit};
-\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
-\draw[<->] (p2.east) -- (p5.west);
-\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
-\draw[->,thick] (p5.east) -- (gold.west);
-\draw[->,thick] (p4.east) -- (plane.west);
-\end{tikzpicture}
-\caption{Series map.  Upper double arrows are the exact marked transports and
-returns proved here; the right arrow is the common-carrier theorem.  The
-lower solid arrow is Paper~IV's independent reconstruction.  Only their
-residual Frobenius-orbit profiles are compared.}
-\label{fig:series-map}
-\end{figure}
 
 Put \(k=\F_{11}\), \(G=A_5\), and let
 
@@ -1555,25 +1511,89 @@ Theorem~\ref{thm:conference-saturation}, or Proposition
 \section{Conclusion}
 \label{sec:conclusion}
 
-The scattered shadows gather on one carrier, but not by becoming equal.
-Paper~II supplies a chordal cubic; its special orbit returns the six axes;
-the empty-alignment criterion recognizes the conference locus; outer
-difference returns the conference orientation of Papers~I and III.
-The selected-line correspondence is an equivalence, and the bare
-correspondence is exactly its \(C_2\)-quotient.  This is the complete
-information-loss statement, including its scalar and outer sharpness.
+The chordal and conference cubics are geometrically distinct, but after a
+chordal line is selected they recover the same marked six-axis carrier.  The
+singular quartic of the chordal cubic recovers the constant double cover
+\(A_5/C_5\to A_5/D_{10}\), and the normalized outer difference gives mutually
+inverse reconstruction between a normalized chordal generator and an oriented
+conference generator.  Forgetting the selected chordal line is exactly the
+free \(C_2\)-quotient.  Thus the result identifies the source information
+retained by the two cubic shadows without identifying the two invariant cubic
+lines themselves.
 
-The broader conclusion is an information-loss principle.  The integral
-theorem makes it concrete: the rank-five augmentation and rank-six
-root--weight lattices remain distinct, but their common binary heart carries
-an \(\F_4\)-commutant on which reversal is Frobenius.  Distinct shadows need
-not become isomorphic in order to encode equivalent source data; what matters
-is whether their residual ambiguity can be isolated and rigidified.  In the
-upper branch that ambiguity is a \(C_2\)-torsor, while in the independent
-Paper-IV branch it is a \(C_3\)-Frobenius orbit.  In both constructions the
-commutant field records the marking still missing after reconstruction.  Thus
-sparse invariants can retain a source up to a residual Galois-type
-rigidification even when the visible shadows have different geometry.
+The recovered six-set also controls the integral normalization.  The
+rank-five augmentation and rank-six root--weight lattices remain distinct,
+while their common binary heart carries the \(\F_4\)-structure on which
+conference reversal is Frobenius.  Together these results determine both the
+common marked carrier and the precise residual ambiguity left by the
+reconstruction.
+
+\Needspace{34\baselineskip}
+\section*{Clebsch: Rigidity from Sparse Shadows}
+
+\begin{center}
+\begin{tabular}{@{}r@{\hskip 1.4em}l@{}}
+{\scriptsize I}   & From deep holes, a form arises;\\
+{\scriptsize II}  & beneath it, paired chords turn true;\\
+{\scriptsize III} & through many veils, the golden thread runs;\\
+{\scriptsize IV}  & from bare, whispered words, a plane rises;\\
+{\scriptsize V}   & \textbf{beneath one form, two shadows, a hidden twist between.}
+\end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Latex,
+  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
+    align=center,font=\footnotesize,minimum height=9mm,text width=34mm,
+    inner sep=2.5pt},
+  active/.style={paper,very thick,fill=black!12},
+  hinge/.style={paper,thick},
+  package/.style={paper,text width=48mm}
+]
+\node[paper]   (p1) at (0,1.9) {\textbf{I}\\deep-hole\\conference cubic};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\matching-quotient\\chordal cubic};
+\node[paper]   (p3) at (0,-1.2) {\textbf{III}\\golden-descent\\conference cubic};
+\node[active]  (p5) at (5.5,0.35) {\textbf{V}\\marked cubic\\correspondence};
+\node[package] (gold) at (10.6,0.35) {one six-axis carrier\\conference \(+\) chordal};
+\node[paper]   (p4) at (0,-3.6) {\textbf{IV}\\minimum-word pairs};
+\node[package] (plane) at (5.5,-3.6) {marked conic plane and polarity\\with an \(\F_8\)-marking};
+\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
+\draw[<->] (p2.east) -- (p5.west);
+\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
+\draw[->,thick] (p5.east) -- (gold.west);
+\draw[->,thick] (p4.east) -- (plane.west);
+\end{tikzpicture}
+\caption{Programme map.  The upper double arrows are Paper~V's marked
+transports and returns between the chordal and conference shadows; the right
+arrow is its common-carrier reconstruction.  The lower solid arrow is
+Paper~IV's independent minimum-word reconstruction.  Only the residual
+\(C_2\)- and Frobenius-orbit markings are compared across the two branches.}
+\label{fig:programme-map}
+\end{figure}
+
+The five papers are logically independent; the map records reconstruction
+correspondences and thematic relations, not proof dependencies.
+
+The scattered shadows gather on one carrier, but not by becoming equal.
+Papers~I and III reach the conference shadow from deep-hole and
+golden-descent data; Paper~II reaches the chordal shadow from
+matching-quotient data.  Paper~V shows that these distinct cubic shadows
+recover the same marked six-axis carrier, with a residual \(C_2\)-torsor when
+the selected chordal line is forgotten.
+
+Paper~IV forms an independent branch.  There the sparse data are
+minimum-word pairs rather than cubic data, and weighted pair concurrences
+recover a marked conic plane and polarity.  Its residual marking is governed
+instead by Frobenius on the \(\F_8\)-commutant.  The two branches therefore
+illustrate the same information-loss principle without sharing a geometric
+carrier: reconstruction can recover the source while leaving a small, rigid
+residual marking.
+
+Distinct shadows need not become isomorphic in order to encode equivalent
+source data; what matters is whether the ambiguity left after reconstruction
+can itself be isolated and rigidified.
 
 \section*{AI assistance disclosure}
 
