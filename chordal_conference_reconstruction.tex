@@ -300,7 +300,7 @@ and the exotic Frobenius torsor are therefore the same principal
 \(C_2\)-torsor.
 \end{theorem}
 
-Fix now the Paper-II \(H_3\) matching
+Fix now the \(H_3\) matching
 \[
  M=\{01,25,37,49,68,10\,11\}
 \]
@@ -311,11 +311,10 @@ on the six pairs of \(M\).  Write \(X_M\) for that six-set and
  A_M=\bigl\{(u_x)_{x\in X_M}\in\F_{11}^{X_M}:
                  \textstyle\sum_xu_x=0\bigr\}
 \]
-for its augmentation module.  \emph{Quadratic trade rigidity and cubic
-orientation in conic matching quotients} constructs a ten-dimensional
-quotient \(W\), an intrinsic pair of matching sheets, and their first
-nonzero signed moment \(\mu_3\in\Sym^3(W)\)
-\cite{RuddFactorization2026}.
+for its augmentation module.  The matching quotient of
+\cite{RuddFactorization2026} is a ten-dimensional quotient \(W\) with an
+intrinsic pair of matching sheets and their first nonzero signed moment
+\(\mu_3\in\Sym^3(W)\).
 Since the action on \(X_M\) is transitive, a pair stabilizer has order ten;
 the order-ten subgroups of \(A_5\) are the self-normalizing groups
 \(D_{10}\).  Thus \(X_M\cong A_5/D_{10}\).
@@ -324,7 +323,7 @@ Let \(W_5\) be the five-isotypic summand of \(W|_G\).  The invariant
 self-duality of \(W_5\) turns the projection of \(\mu_3\) into a projective
 cubic line \([H_M]\subset\PP(\Sym^3(W_5^*))\).
 
-The retained Paper-II datum is the actual projected generator together with
+The retained matching-quotient datum is the actual projected generator together with
 its normalized multiplicity-one bridge to \((A_0,Q_0)\).  The target metric is
 the fixed \(Q_0\); no isomorphism class of arbitrary quadratic forms is being
 classified.  Section~\ref{sec:placement} proves that the image is one of the
@@ -339,7 +338,7 @@ normalized metric chordal shadows in Theorem
   >=Latex,node distance=8mm and 14mm,
   box/.style={draw,rounded corners=1.5pt,align=center,text width=43mm,
     inner sep=4pt}, every edge/.style={draw,->}]
-\node[box] (moment) {Paper-II signed moment\\and metric chordal shadow};
+\node[box] (moment) {matching-quotient signed moment\\and metric chordal shadow};
 \node[box,right=of moment] (curve) {singular quartic and its\\special \(A_5/C_5\)-orbit};
 \node[box,below=of curve] (axes) {stabilizer quotient recovers\\the six-set \(A_5/D_{10}\)};
 \node[box,left=of axes] (conf) {outer difference gives\\the conference companion};
@@ -351,16 +350,26 @@ normalized metric chordal shadows in Theorem
 \end{tikzpicture}
 \end{center}
 
-Section~\ref{sec:placement} gives the one Paper-II placement calculation.
+The companion papers referred to below are \emph{Reconstructing the Clebsch
+code and its golden orientation from its deep-hole syndrome
+locus}~\cite{RuddRigidity2026}, whose source is the deep-hole conference
+cubic; \emph{Quadratic trade rigidity and cubic orientation in conic matching
+quotients}~\cite{RuddFactorization2026}, whose matching quotient supplies the
+signed cubic moment used throughout; \emph{Golden descent and operator
+realizations of the Clebsch cubic}~\cite{RuddPassages2026}, the golden-descent
+conference source; and \emph{Reconstructing \(\operatorname{PG}(2,13)\), its
+conic, and polarity from the minimum words of a binary conic
+code}~\cite{RuddPassant2026}, the independent minimum-word reconstruction.
+
+Section~\ref{sec:placement} gives the one matching-quotient placement calculation.
 Sections~\ref{sec:singular} and \ref{sec:outer-companion} prove the special
 orbit and outer-difference bridge.  Section~\ref{sec:groupoids} upgrades the
 round trip to an intrinsic classification and computes its marking fibres.
 Section~\ref{sec:source-return} records the source-specific returns.
 Sections~\ref{sec:lattice-tower}--\ref{sec:golden-residue} prove the integral
 normalization--residue theorem.  Section~\ref{sec:residual-markings} compares
-its \(C_2\)-rigidification with the separate \(C_3\)-rigidification of
-\emph{Reconstructing \(\operatorname{PG}(2,13)\), its conic, and polarity from
-the minimum words of a binary conic code}~\cite{RuddPassant2026}.
+its \(C_2\)-rigidification with the separate \(C_3\)-rigidification of the
+minimum-word reconstruction \cite{RuddPassant2026}.
 
 \medskip
 \noindent\textbf{Scope and exact information loss.}
@@ -375,7 +384,7 @@ their common binary heart and the residual marking carried there.
 \section{The metric chordal normal form}
 \label{sec:placement}
 
-The restriction of that quotient to \(G\) has character
+The restriction of \(W\) to \(G\) has character
 \[
 \begin{array}{c@{\qquad}ccccc}
 \text{class}&1&2&3&5A&5B\\
@@ -405,10 +414,10 @@ Schur's lemma gives
  \dim_{\F_{11}}\operatorname{Hom}_G(A_M,e_5W)=1.
 \]
 
-\begin{proposition}[Paper-II placement]
+\begin{proposition}[Matching-quotient placement]
 \label{prop:paper-ii-placement}
 After the outer-twisted multiplicity-one identification with \(A_0\), the
-chosen-sheet projection of that signed moment is a metric chordal
+chosen-sheet projection of \(\mu_3\) is a metric chordal
 shadow whose actual cubic is normalized by its first nonzero coefficient.
 Its projective equation in standard binary-quartic
 coordinates is
@@ -419,7 +428,7 @@ coordinates is
      \end{pmatrix}.
 \]
 Its sheet reversal is \(-H\).  In the normalization used below, the
-Paper-II pivot is \(3\), and the outer-difference coefficient is \(8\).
+matching-quotient pivot is \(3\), and the outer-difference coefficient is \(8\).
 \end{proposition}
 
 \begin{proof}
@@ -467,7 +476,7 @@ Thus its first nonzero coefficient, that of \(x_0^2x_1\), is \(3\), so set
 \(h_M=3^{-1}\widetilde h_M\).  The displayed vector is the result of the
 three operations in the preceding formula---the central projection, the
 intertwiner, and metric duality---and is an independently checkable record
-of the only Paper-II coordinate transport used here.  The scalar is fixed
+of the only matching-quotient coordinate transport used here.  The scalar is fixed
 before the sheet is
 reversed.  Hence the other sheet is \(-h_M\), rather than a separately
 projectivized generator.
@@ -493,13 +502,12 @@ Indeed, the coefficients of
 \(8,-8,-8,-8,16\), and every other coefficient is zero.  Thus the equality
 is visible term by term, rather than inferred from a singular-point census.
 The conference cubic has six isolated nodes
-by \emph{Reconstructing the Clebsch code and its golden orientation from its
-deep-hole syndrome locus}~\cite{RuddRigidity2026} and therefore spans a
-different line.  This proves the
+by \cite{RuddRigidity2026} and therefore spans a different line.  This proves
+the
 placement without an exhaustive cubic comparison.
 \end{proof}
 
-The displayed matrices only fix the bridge between the frozen Paper-II basis
+The displayed matrices only fix the bridge between the frozen matching-quotient basis
 and the intrinsic carrier.  Every subsequent argument uses the recovered
 metric shadow, its special orbit, and its normalizer.  The exact replay named
 in Section~\ref{sec:verification} checks this normalization leaf
@@ -559,7 +567,7 @@ stabilizer \(C_5\), and the stabilizer map is the canonical double cover
 \[
                  Z_5\longrightarrow\Omega_0.
 \]
-For the Paper-II shadow this quotient is the original six-set \(X_M\).
+For the matching-quotient shadow this quotient is the original six-set \(X_M\).
 \end{proposition}
 
 \begin{proof}
@@ -687,10 +695,9 @@ Diagonal switching fixes every triple sign.  Global complementation
 the square identity are intrinsic to the two-graph up to complement.
 \end{proof}
 
-The theorem \emph{Aligned-design faithfulness} of \emph{Golden descent and
-operator realizations of the Clebsch cubic} proves that aligned four-sets
-determine a two-graph up to complement from seven points onward, with seven
-sharp \cite{RuddPassages2026}.  The lemma identifies the
+The theorem \emph{Aligned-design faithfulness} of \cite{RuddPassages2026}
+proves that aligned four-sets determine a two-graph up to complement from
+seven points onward, with seven sharp.  The lemma identifies the
 empty-alignment fibre at that sharp six-point boundary: it is precisely the
 unmarked conference locus.  The recovered \(A_5\)-action then selects the
 opposite pair needed here.
@@ -698,7 +705,7 @@ opposite pair needed here.
 The corollary \emph{Nodes, symmetry, and integral commutant} of
 \cite{RuddRigidity2026} proves
 that this triangle cubic has exactly six ordinary nodes in projective-frame
-position \cite{RuddRigidity2026}.  Since \(H_M\) is singular along a curve,
+position.  Since \(H_M\) is singular along a curve,
 the conference and chordal lines are distinct.  The point is causal: the
 conference pair was constructed from the recovered six-set, not inserted
 among the recognition axioms.
@@ -737,7 +744,7 @@ six-set.
 \begin{proposition}[Normalized outer action]
 \label{prop:outer-pencil-action}
 Let \(c_B\) be either coefficient-normalized conference generator and let
-\(h\) be the coefficient-normalized Paper-II chordal generator of
+\(h\) be the coefficient-normalized matching-quotient chordal generator of
 Proposition~\ref{prop:paper-ii-placement}.  In the
 ordered basis \((c_B,h)\),
 \[
@@ -766,7 +773,7 @@ In the basis \(e_i-e_6\), its augmentation matrix is
 \]
 Reversing the conference class changes every triangle sign, hence sends
 \(c_B\) to \(-c_B\).  Proposition~\ref{prop:paper-ii-placement} identifies
-the Paper-II line with the chordal line and fixes its pivot scalar.  Comparing one
+the matching-quotient line with the chordal line and fixes its pivot scalar.  Comparing one
 coefficient now makes the remaining scalar transparent.  With the monomial
 order \(\mathcal M\) of Proposition~\ref{prop:paper-ii-placement}, coefficient
 normalization gives
@@ -845,7 +852,7 @@ They carry \(-h\) to \(-c\).
 \end{corollary}
 
 \begin{proof}
-The assertion on the Paper-II line is Proposition
+The assertion on the matching-quotient line is Proposition
 \ref{prop:outer-pencil-action}.  By Lemma~\ref{lem:two-chordal-lines}, the
 other chordal line is \(q_\Pi L\), and
 \(q_\Pi^2=1\), so the restriction there is nonzero as well.  Every remaining
@@ -1038,13 +1045,14 @@ records a dependency lattice rather than four unrelated counts.
 \label{sec:source-return}
 
 We next state exactly what is returned to the three companion papers.  The
-bridge to \cite{RuddFactorization2026} includes the normalized intertwiner
-\(T\) of Section~\ref{sec:placement}; its pivot \(3^{-1}\) is transported, not
-recomputed after relabeling.  The sources of \cite{RuddRigidity2026} and
-\cite{RuddPassages2026} begin with a conference signing and add the choice of
-\(L\).  The chart lift, scale, outer/Petersen labels, and
-cross-identification of \cite{RuddPassages2026} remain bridge data rather
-than reconstructed outputs.
+matching-quotient bridge \cite{RuddFactorization2026} includes the normalized
+intertwiner \(T\) of Section~\ref{sec:placement}; its pivot \(3^{-1}\) is
+transported, not recomputed after relabeling.  The deep-hole and
+golden-descent conference sources
+\cite{RuddRigidity2026,RuddPassages2026} begin with a conference signing and
+add the choice of \(L\).  The chart lift, scale, outer/Petersen labels, and
+cross-identification of the golden-descent source \cite{RuddPassages2026}
+remain bridge data rather than reconstructed outputs.
 
 \begin{corollary}[Source-by-source marked return]
 \label{cor:source-by-source-return}
@@ -1055,22 +1063,25 @@ output level.
 \begin{center}
 \small
 \renewcommand{\arraystretch}{1.15}
-\begin{tabular}{@{}>{\centering\arraybackslash}p{0.07\textwidth}
-  >{\raggedright\arraybackslash}p{0.32\textwidth}
-  >{\raggedright\arraybackslash}p{0.20\textwidth}
-  >{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.21\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}
+  >{\raggedright\arraybackslash}p{0.17\textwidth}
+  >{\raggedright\arraybackslash}p{0.27\textwidth}@{}}
 \toprule
-source paper & retained source output & target decoration & inverse returns\\
+source & retained source output & target decoration & inverse returns\\
 \midrule
-\cite{RuddRigidity2026} & conference switching class, axis carrier,
-  orientation, and selected chordal line \(L\) & the metric core & the same
-  class, carrier, orientation, and \(L\), modulo switching and relabeling\\
-\cite{RuddFactorization2026} & five-isotypic projected tensor with chosen
-  sheet sign, marked axes, and \(T\) & \(W_5,T\), and the fixed pivot & the
-  same projected tensor, sheet sign, six-axis carrier, and \(T\)\\
-\cite{RuddPassages2026} & relative conference source, selected \(L\), and
-  full bridge datum & \(\mathfrak m_{\mathrm{III}}\) & the same retained
-  source, orientation, \(L\), and bridge datum\\
+deep-hole conference cubic \cite{RuddRigidity2026} & conference switching
+  class, axis carrier, orientation, and selected chordal line \(L\) & the
+  metric core & the same class, carrier, orientation, and \(L\), modulo
+  switching and relabeling\\
+matching-quotient cubic moment \cite{RuddFactorization2026} & five-isotypic
+  projected tensor with chosen sheet sign, marked axes, and \(T\) &
+  \(W_5,T\), and the fixed pivot & the same projected tensor, sheet sign,
+  six-axis carrier, and \(T\)\\
+golden-descent conference cubic \cite{RuddPassages2026} & relative conference
+  source, selected \(L\), and full bridge datum &
+  \(\mathfrak m_{\mathrm{III}}\) & the same retained source, orientation,
+  \(L\), and bridge datum\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -1439,9 +1450,9 @@ orientation reconstructed in this paper.
 \section{Residual Frobenius markings}
 \label{sec:residual-markings}
 
-The reconstruction of \cite{RuddPassant2026} ends with a different residual
-marking.  The comparison is governed by the following standard descent lemma,
-not by a geometric arrow between the papers.
+The minimum-word reconstruction \cite{RuddPassant2026} ends with a different
+residual marking.  The comparison is governed by the following standard
+descent lemma, not by a geometric arrow between the papers.
 
 \begin{lemma}[Frobenius-orbit commutant]
 \label{lem:frobenius-orbit-commutant}
@@ -1496,8 +1507,8 @@ calculation.  The paper-owned standard-library checker
 verification/evidence/paper\_ii\_chordal\_axis.py
 \end{center}
 has schema \texttt{paper-v-chordal-axis-v2}.  It independently reconstructs the matching
-quotient from the frozen arithmetic of \cite{RuddFactorization2026}, computes
-the central projector
+quotient from the frozen matching-quotient arithmetic
+\cite{RuddFactorization2026}, computes the central projector
 and both intertwiner spaces, checks all cubic coefficients, enumerates the
 rational singular loci, and determines the pencil action.  Its exact output
 is the adjacent JSON file.  The JSON names, sizes, and hashes both frozen
@@ -1534,9 +1545,9 @@ conference generator.  Forgetting the selected chordal line is exactly the
 free \(C_2\)-quotient.  Thus the result identifies the source information
 retained by the two cubic shadows without identifying the two invariant cubic
 lines themselves.  These losses are sharp: before scalar normalization,
-forgetting a generator while retaining its line has fibre \(K^\times\); after
-normalization, forgetting the selected chordal line leaves exactly the free
-\(C_2\)-action \(uq\).
+forgetting a generator while retaining its line has fibre \(K^\times\), and
+the \(C_2\)-quotient above is the free action
+\((L,h,c)\mapsto(qL,-qh,c)\).
 
 The recovered six-set also controls the integral normalization.  The
 rank-five augmentation and rank-six root--weight lattices remain distinct,
@@ -1595,12 +1606,15 @@ correspondences and thematic relations, not proof dependencies.
 
 The scattered shadows gather on one carrier, but not by becoming equal.
 Papers~I and III reach the conference shadow from deep-hole and
-golden-descent data; Paper~II reaches the chordal shadow from
-matching-quotient data.  This paper shows that these distinct cubic shadows
+golden-descent data \cite{RuddRigidity2026,RuddPassages2026}; Paper~II reaches
+the chordal shadow from matching-quotient data
+\cite{RuddFactorization2026}.  This paper shows that these distinct cubic
+shadows
 recover the same marked six-axis carrier, with a residual \(C_2\)-torsor when
 the selected chordal line is forgotten.
 
-Paper~IV forms an independent branch.  There the sparse data are
+Paper~IV forms an independent branch \cite{RuddPassant2026}.  There the sparse
+data are
 minimum-word pairs rather than cubic data, and weighted pair concurrences
 recover a marked conic plane and polarity.  Its residual marking is governed
 instead by Frobenius on the \(\F_8\)-commutant.  The two branches therefore
