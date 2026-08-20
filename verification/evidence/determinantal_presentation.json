@@ -1,0 +1,434 @@
+{
+  "conference_matrix": [
+    [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      -1,
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      0,
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      0,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      -1,
+      0,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      0
+    ]
+  ],
+  "coordinate_tensor_sum": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "coordinate_tensors": [
+    [
+      [
+        10,
+        7,
+        10
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        10,
+        7,
+        10
+      ]
+    ],
+    [
+      [
+        1,
+        3,
+        8
+      ],
+      [
+        7,
+        10,
+        1
+      ],
+      [
+        4,
+        1,
+        10
+      ]
+    ],
+    [
+      [
+        10,
+        1,
+        4
+      ],
+      [
+        1,
+        10,
+        7
+      ],
+      [
+        8,
+        3,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  ],
+  "determinant_cubic": [
+    0,
+    1,
+    10,
+    10,
+    1,
+    1,
+    9,
+    2,
+    2,
+    10,
+    9,
+    2,
+    10,
+    9,
+    1,
+    0,
+    10,
+    1,
+    10,
+    10,
+    2,
+    9,
+    1,
+    9,
+    10,
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    0,
+    10,
+    10,
+    0
+  ],
+  "determinant_equals_triangle_multiple": true,
+  "determinant_over_triangle_ratio": 1,
+  "eigenspace_minus_basis": [
+    [
+      3,
+      1,
+      8,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      3,
+      3,
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      8,
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "eigenspace_plus_basis": [
+    [
+      7,
+      1,
+      4,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      7,
+      7,
+      0,
+      1,
+      0
+    ],
+    [
+      7,
+      4,
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "eigenspaces_orthogonal": true,
+  "field": 11,
+  "frame_points": [
+    {
+      "axis": 0,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rank": 1
+    },
+    {
+      "axis": 1,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        6,
+        1,
+        1,
+        1
+      ],
+      "rank": 1
+    },
+    {
+      "axis": 2,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        1,
+        6,
+        1,
+        1
+      ],
+      "rank": 1
+    },
+    {
+      "axis": 3,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        1,
+        1,
+        6,
+        1
+      ],
+      "rank": 1
+    },
+    {
+      "axis": 4,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        1,
+        1,
+        1,
+        6
+      ],
+      "rank": 1
+    },
+    {
+      "axis": 5,
+      "equals_minus_six_times_coordinate_tensor": true,
+      "point": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 1
+    }
+  ],
+  "matrix_square_is_five_identity": true,
+  "maximum_distance_separable": {
+    "minus_all_three_by_three_minors_nonzero": true,
+    "minus_minimum_weight": 4,
+    "plus_all_three_by_three_minors_nonzero": true,
+    "plus_minimum_weight": 4
+  },
+  "rank_at_most_one_locus": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      6
+    ],
+    [
+      1,
+      1,
+      1,
+      6,
+      1
+    ],
+    [
+      1,
+      1,
+      6,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      1,
+      6,
+      1,
+      1,
+      1
+    ]
+  ],
+  "rank_at_most_one_locus_size": 6,
+  "role": "cross-check of the determinantal proof of the node count; the theorem is proved without a computer and holds in every characteristic outside {2,3,5} in which five is a square",
+  "schema": "paper-v-determinantal-presentation-v1",
+  "scope": "exact arithmetic over F_11 only; proves no statement on its own",
+  "square_root_of_five": 4,
+  "triangle_cubic": [
+    0,
+    1,
+    10,
+    10,
+    1,
+    1,
+    9,
+    2,
+    2,
+    10,
+    9,
+    2,
+    10,
+    9,
+    1,
+    0,
+    10,
+    1,
+    10,
+    10,
+    2,
+    9,
+    1,
+    9,
+    10,
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    0,
+    10,
+    10,
+    0
+  ],
+  "verdict": "DETERMINANTAL_PRESENTATION_CONFIRMED"
+}

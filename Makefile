@@ -16,6 +16,7 @@ check: evidence manuscript warnings
 evidence:
 	$(PYTHON) verification/evidence/paper_ii_chordal_axis.py --check
 	$(PYTHON) verification/evidence/conference_node_completeness.py --check
+	$(PYTHON) verification/evidence/determinantal_presentation.py --check
 
 manuscript: $(SOURCE)
 	$(LATEXMK) $(LATEXMK_FLAGS) $(SOURCE)

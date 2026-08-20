@@ -1,5 +1,7 @@
 # Chordal and Conference Cubics: Reconstruction and a Residual C2-Torsor
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21895531-blue.svg)](https://doi.org/10.5281/zenodo.21895531)
+
 [Read the paper (PDF).](chordal_conference_reconstruction.pdf)
 
 Two geometrically inequivalent cubic shadows occur on the same

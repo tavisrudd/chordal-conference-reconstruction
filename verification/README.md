@@ -42,6 +42,21 @@ no Groebner input. evidence/conference_node_completeness.sing is an
 independent computer-algebra replay of the same two ideals; it needs Singular
 and is therefore not invoked by make check.
 
+The third checker evidence/determinantal_presentation.py replays the
+determinantal presentation behind the node count. The conference cubic is the
+determinant of the three-by-three matrix of linear forms
+\(M(x)=\sum_i x_i\,\ell_i\otimes m_i\) assembled from the coordinate functionals
+on the two eigenspaces of the conference matrix, and its rank-at-most-one locus
+is the six coordinate tensors, which are the six nodes. That statement is a
+theorem proved without a computer and valid in every characteristic outside
+\(\{2,3,5\}\) in which five is a square; this checker replays it over
+\(\mathbf F_{11}\), confirming the eigenspace splitting, the
+maximum-distance-separable property of both eigenspaces, the relation
+\(\sum_i\ell_i\otimes m_i=0\), the identity \(\det M=c_B\) for the basis it
+fixes, and the rank-at-most-one locus. It is a cross-check of a proved
+statement, not evidence for one, and the Groebner certificate above holds the
+same status now that the count is proved structurally.
+
 evidence/icosahedral_stabilizer_tower.py and its adjacent JSON file concern
 an optional successor theorem about the \((2,3,5)\) inertia strata over
 extension fields. They are retained as research evidence but are not invoked

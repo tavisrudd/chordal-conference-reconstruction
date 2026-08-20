@@ -31,7 +31,7 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 904,
+      "bytes": 975,
       "mode": "100644",
       "path": "Makefile",
       "rewrites": [
@@ -67,25 +67,25 @@
         }
       ],
       "role": "support",
-      "sha256": "1548e7a3c6128d691e322872ce7086613ea094723d91b8179ef4ee3af6498f0a",
-      "source_blob": "99f7f88e466254ba7f13033ceb3b26e3af3f5dab"
+      "sha256": "6e984527ddbc3edf4717aa290f63d4c09e5f130fc80ef2f86f865ab780c9e2ca",
+      "source_blob": "cf29e677ab034268abdcf750991cb34f1ec9fe5e"
     },
     {
       "bytes": 314,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "d5e4ea5f0f67dab7ec4b574160c600ea3c9ccd373c8d7b02a35cb49bb7315a1e",
+      "sha256": "694d42da01604a1f92b68e94fe382f473cd4d1a08a98063bc3917b6a3aa7c0f6",
       "source_blob": null
     },
     {
-      "bytes": 2907,
+      "bytes": 3027,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "fa0cbc748ba32b073a2f36a384348d388650d71c547945114b458ae79e272be6",
-      "source_blob": "11f07baad98d4567e8db8551701ff573a4866a24"
+      "sha256": "a1a018ae8292f999ad8e32c6efb4e0fb58dfa5b6f0ec41926f3c5c2b50206718",
+      "source_blob": "bae4fa76429a84c49b7a4dde560796685f6bf11f"
     },
     {
       "bytes": 188098,
@@ -124,13 +124,13 @@
       "source_blob": "c8be986d73ee5a9322cb03ba543fc98e3afac874"
     },
     {
-      "bytes": 2720,
+      "bytes": 3719,
       "mode": "100644",
       "path": "verification/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "f56e7c6f522e31444aeeddd2f34463e3508dd90f5168daf1aabef6172a33bb14",
-      "source_blob": "de91e81743d3fc9eb473a260e4cff3f98c26be5a"
+      "sha256": "b95c269950c1a0064fdf6a78dc4c651a24614216d6fb5a04cf66254fda3726f9",
+      "source_blob": "1f4a632c949a613d1e01eca030902c1e2834e06d"
     },
     {
       "bytes": 8073,
@@ -158,6 +158,24 @@
       "role": "verification",
       "sha256": "9c888b3e865aeb71f988b886f97923583f9f8635fb1e09afe630c83d4997fb2f",
       "source_blob": "2cd3a3080234390c4e03b68bcfe8c37814a93a12"
+    },
+    {
+      "bytes": 4919,
+      "mode": "100644",
+      "path": "verification/evidence/determinantal_presentation.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "c5051153590acc5dd8bfcb1287c0f8b53f651268dc9ea76e19a780d165c279ab",
+      "source_blob": "e5023f611dfd2798779f26dfeaee8554e3b0f1cf"
+    },
+    {
+      "bytes": 11405,
+      "mode": "100644",
+      "path": "verification/evidence/determinantal_presentation.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "f78ea061a5f35def10d709c9cd20caee2e93a85c670b010dad32250b4e173416",
+      "source_blob": "dc889ee338ec0d7d560ca64d596e585ec2132991"
     },
     {
       "bytes": 16785,
@@ -308,5 +326,5 @@
   "repository": "chordal-conference-reconstruction",
   "repository_map_sha256": "c0542d39c9b7459acafaf90873f9f15956351a8dba3e6e52149c0dddd571c39b",
   "schema_version": 1,
-  "source_commit": "23330404944c09dc240a2c7c5597a5bc77f8ea2a"
+  "source_commit": "3984d0cd5967f76a12a9d33118e36b66bbebf154"
 }
