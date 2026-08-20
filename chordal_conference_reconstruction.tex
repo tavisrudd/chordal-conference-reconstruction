@@ -52,7 +52,7 @@ Different lossy invariants of the same source need not have the same
 geometry.  Let \(\Omega\) be the six Sylow-\(5\) subgroups of \(A_5\) and
 \(V\) the five-dimensional augmentation module of \(\F_{11}^{\Omega}\) with
 its standard quadratic form.  The \(A_5\)-invariant cubic pencil in
-\(\PP(V)\) contains a conference cubic with six isolated nodes and two
+\(\PP(V)\) contains a conference cubic with exactly six isolated nodes and two
 chordal cubics, each singular along a rational normal quartic; over
 \(\overline{\F}_{11}\) the conference cubic is not projectively isomorphic
 to either chordal cubic.  We prove that they nevertheless recover the same
@@ -560,6 +560,23 @@ scheme, so over \(\overline{\F}_{11}\) the conference cubic is not
 projectively isomorphic to either chordal cubic.
 \end{proposition}
 
+\begin{remark}[Completeness of the node count]
+\label{rmk:node-count-complete}
+Proposition~\ref{prop:nodes-mod-eleven} exhibits six nodes and does not by
+itself exclude further singular points.  The singular scheme of \(c_B=0\) is
+in fact exactly those six reduced points, over \(\overline{\F}_{11}\) as well,
+and one step of that is delegated: the checker
+\texttt{verification/evidence/conference\_node\_completeness.py} computes the
+Hilbert numerator of the conference Jacobian ideal over \(\F_{11}\) in the
+degree-reverse-lexicographic order and finds the projective scheme finite of
+degree six.  Six distinct singular points with Hessian of rank four account
+for that degree with multiplicity one each, so nothing else is singular and
+the scheme is reduced.  The same run returns Hilbert polynomial \(4d+1\) for
+the chordal Jacobian scheme, which leaves no room for an isolated point beside
+the rational normal quartic.  Nothing below uses the exactness; it sharpens
+Proposition~\ref{prop:nodes-mod-eleven} rather than supporting it.
+\end{remark}
+
 \begin{proposition}[The special orbit and its stabilizer quotient]
 \label{prop:special-orbit}
 Let \(R\) be the singular quartic of a metric chordal shadow.  The scheme
@@ -706,8 +723,9 @@ empty-alignment fibre at that sharp six-point boundary: it is precisely the
 unmarked conference locus.  The recovered \(A_5\)-action then selects the
 opposite pair needed here.
 
-By Proposition~\ref{prop:nodes-mod-eleven} this triangle cubic has six ordinary
-nodes in projective-frame position.  Since \(H_M\) is singular along a curve,
+By Proposition~\ref{prop:nodes-mod-eleven} and
+Remark~\ref{rmk:node-count-complete} this triangle cubic has exactly six
+ordinary nodes in projective-frame position.  Since \(H_M\) is singular along a curve,
 the conference and chordal lines are distinct.  The point is causal: the
 conference pair was constructed from the recovered six-set, not inserted
 among the recognition axioms.
@@ -1525,6 +1543,9 @@ make evidence
 \end{center}
 and returns \texttt{CHECK OK (NO\_MATCH)}; \texttt{NO\_MATCH} records the
 failure of the literal conference-line identification, not a failed check.
+That target runs a second checker as well, which certifies completeness of the
+node count; its reduction is Remark~\ref{rmk:node-count-complete}, and its
+schema, terminal, and hashes are recorded in the adjacent JSON certificate.
 A separately written cold replay reproduced the normalized coefficient
 vector; its full byte SHA-256 is recorded in the adjacent JSON certificate.
 The execution is replay evidence for Proposition

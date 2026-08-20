@@ -1,0 +1,59 @@
+// Independent computer-algebra replay of conference_node_completeness.py.
+//
+// Same two cubics over F_11 in the same augmentation coordinates, same Jacobian
+// ideals, computed by Singular's own Groebner engine and primary-decomposition
+// library rather than by the certificate program's Buchberger implementation.
+//
+//   nix shell nixpkgs#singular --command Singular -q conference_node_completeness.sing
+//
+// Expected output:
+//   conference dim/deg:  0 / 6   (projective)
+//   conference radical dim/deg:  0 / 6   (so the singular scheme is reduced)
+//   chordal dim/deg:  1 / 4   (projective; the rational normal quartic)
+//
+// The cubic coefficient lists are the tracked conference_triangle_cubic and
+// projected_sheet_cubic of verification/evidence/paper_ii_chordal_axis.json,
+// expanded in the monomial basis x(0..4) of BASIS.
+
+LIB "primdec.lib";
+ring r = 11,x(0..4),dp;
+
+poly c =
+  1*x(0)^2*x(1) + 1*x(0)^2*x(2) + 10*x(0)^2*x(3) + 10*x(0)^2*x(4)
++ 1*x(0)*x(1)^2 + 2*x(0)*x(1)*x(2) + 9*x(0)*x(1)*x(3) + 2*x(0)*x(1)*x(4)
++ 1*x(0)*x(2)^2 + 2*x(0)*x(2)*x(3) + 9*x(0)*x(2)*x(4) + 10*x(0)*x(3)^2
++ 9*x(0)*x(3)*x(4) + 10*x(0)*x(4)^2 + 10*x(1)^2*x(2) + 10*x(1)^2*x(3)
++ 1*x(1)^2*x(4) + 10*x(1)*x(2)^2 + 9*x(1)*x(2)*x(3) + 9*x(1)*x(2)*x(4)
++ 10*x(1)*x(3)^2 + 2*x(1)*x(3)*x(4) + 1*x(1)*x(4)^2 + 1*x(2)^2*x(3)
++ 10*x(2)^2*x(4) + 1*x(2)*x(3)^2 + 2*x(2)*x(3)*x(4) + 10*x(2)*x(4)^2
++ 1*x(3)^2*x(4) + 1*x(3)*x(4)^2;
+
+poly h =
+  1*x(0)^2*x(1) + 1*x(0)^2*x(2) + 9*x(0)^2*x(3) + 9*x(0)^2*x(4)
++ 1*x(0)*x(1)^2 + 2*x(0)*x(1)*x(2) + 7*x(0)*x(1)*x(3) + 2*x(0)*x(1)*x(4)
++ 1*x(0)*x(2)^2 + 2*x(0)*x(2)*x(3) + 7*x(0)*x(2)*x(4) + 9*x(0)*x(3)^2
++ 7*x(0)*x(3)*x(4) + 9*x(0)*x(4)^2 + 9*x(1)^2*x(2) + 9*x(1)^2*x(3)
++ 1*x(1)^2*x(4) + 9*x(1)*x(2)^2 + 7*x(1)*x(2)*x(3) + 7*x(1)*x(2)*x(4)
++ 9*x(1)*x(3)^2 + 2*x(1)*x(3)*x(4) + 1*x(1)*x(4)^2 + 1*x(2)^2*x(3)
++ 9*x(2)^2*x(4) + 1*x(2)*x(3)^2 + 2*x(2)*x(3)*x(4) + 9*x(2)*x(4)^2
++ 1*x(3)^2*x(4) + 1*x(3)*x(4)^2;
+
+ideal Jc = jacob(c);
+ideal Jh = jacob(h);
+ideal Gc = std(Jc);
+ideal Gh = std(Jh);
+
+"conference dim/deg:";
+dim(Gc);
+degree(Gc);
+
+"conference radical dim/deg:";
+ideal Rc = std(radical(Jc));
+dim(Rc);
+degree(Rc);
+
+"chordal dim/deg:";
+dim(Gh);
+degree(Gh);
+
+quit;
