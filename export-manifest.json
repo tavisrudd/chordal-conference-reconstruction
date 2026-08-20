@@ -75,35 +75,35 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "326d8a3a4453bc4b520d7c5e499fc4fe3d7eed8e8f26e3e787d40180851262a6",
+      "sha256": "45d143c95d7036128348c7d74a22b2e3af976f3fe004fa1e9ecf9f997d97fb5c",
       "source_blob": null
     },
     {
-      "bytes": 2577,
+      "bytes": 2907,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "7907861d6013a9d6a34034529261a47ab83c3d8b4eb339f68e5f403f22214902",
-      "source_blob": "ef13aa7dfb4a9a48e5e26220ae3e93db9ac1535d"
+      "sha256": "fa0cbc748ba32b073a2f36a384348d388650d71c547945114b458ae79e272be6",
+      "source_blob": "11f07baad98d4567e8db8551701ff573a4866a24"
     },
     {
-      "bytes": 186531,
+      "bytes": 185668,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "7f4018b6541fc6c58c3292f1edde6f65282c4630fc1eadd675be62090e27595f",
-      "source_blob": "794d815de3c0a10ef7b2578a0d8152525a6ba41b"
+      "sha256": "7c21af0cc6107fd8d4e4eabae5d03721e9c5f138c817f4b575918d958823b4e2",
+      "source_blob": "de8e8352fcb75d8cb42c7f56eac0742cb10db180"
     },
     {
-      "bytes": 70976,
+      "bytes": 71635,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "8036c4415578ed742771db7a64c826c732c23996a1695ee32c7cea7c18ab10c5",
-      "source_blob": "37d5a9acbbc84c84397bb688c94ce01175c48b5b"
+      "sha256": "80b890823fe16c41d88574d1d3cd380f980d71a05d86f043c8c72cf7e032330d",
+      "source_blob": "28209923ded46c77a1a77c861073fbdbd21148f4"
     },
     {
       "bytes": 567,
@@ -279,7 +279,7 @@
   "paper_registry_sha256": "e3e739fd4bca142a8c245291c1d30125fa468718cc8351c23c2b2fc3c452e84e",
   "release_output_policy": "legacy-unspecified",
   "repository": "chordal-conference-reconstruction",
-  "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
+  "repository_map_sha256": "c0542d39c9b7459acafaf90873f9f15956351a8dba3e6e52149c0dddd571c39b",
   "schema_version": 1,
-  "source_commit": "bb29815b8a0e57b42954ffba96a89dda15243640"
+  "source_commit": "91817b51a4689bce7c81f78d21441557d6e17550"
 }

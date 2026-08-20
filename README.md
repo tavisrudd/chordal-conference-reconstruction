@@ -23,10 +23,14 @@ operator produces the unique nonsplit \(\mathbf F_4A_5\)-extension, and
 golden reversal becomes Frobenius. Thus the geometric and integral residual
 markings are the same \(C_2\)-torsor.
 
-This is Paper V of *Clebsch: Rigidity from Sparse Shadows*. Papers I--III
-supply concrete sources realizing the two cubic shadows. Paper IV is an
-independent minimum-word reconstruction branch whose residual marking follows
-the same Frobenius-orbit principle.
+This paper belongs to the *Clebsch: Rigidity from Sparse Shadows* series.
+*Reconstructing the Clebsch code and its golden orientation from its deep-hole
+syndrome locus*, *Quadratic trade rigidity and cubic orientation in conic
+matching quotients*, and *Golden descent and operator realizations of the
+Clebsch cubic* supply concrete sources realizing the two cubic shadows.
+*Reconstructing PG(2,13), its conic, and polarity from the minimum words of a
+binary conic code* is an independent minimum-word reconstruction branch whose
+residual marking follows the same Frobenius-orbit principle.
 
 ## Building and checking
 
