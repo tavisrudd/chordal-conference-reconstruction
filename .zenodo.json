@@ -1,6 +1,6 @@
 {
-  "title": "Chordal and Conference Cubics: Reconstruction and a Residual C2-Torsor",
-  "description": "Two geometrically inequivalent A5-invariant cubic shadows occur on the same five-dimensional quadratic augmentation module: chordal cubics and conference cubics. The singular quartic of a chordal cubic and its split twelve-point A5/C5 orbit recover the six-axis carrier A5/D10. After one chordal line is selected, the normalized outer action gives a reversible correspondence with the oriented conference companion; without that selection the correspondence is exactly a residual C2-quotient. A separate integral theorem identifies the resulting marking with Frobenius on the common binary heart.",
+  "title": "Chordal and Conference Cubics: Reconstruction and a Residual C₂-Torsor",
+  "description": "Two geometrically inequivalent A5-invariant cubic shadows occur on the same five-dimensional quadratic augmentation module: chordal cubics and conference cubics. The singular quartic of a chordal cubic and its split twelve-point A5/C5 orbit recover the six-axis carrier A5/D10. After one chordal line is selected, the normalized outer action gives a reversible correspondence with a chosen-sign conference companion; without that selection the correspondence is exactly a residual C2-quotient. A separate integral theorem identifies global negation of the conference matrix with Frobenius on the common binary heart.",
   "creators": [
     {
       "name": "Rudd, Tavis",

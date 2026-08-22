@@ -1,4 +1,4 @@
-# Chordal and Conference Cubics: Reconstruction and a Residual C2-Torsor
+# Chordal and Conference Cubics: Reconstruction and a Residual \(C_2\)-Torsor
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21895530-blue.svg)](https://doi.org/10.5281/zenodo.21895530)
 
@@ -13,25 +13,26 @@ computes the exact \(C_2\)-ambiguity left when that selection is forgotten.
 The chordal cubic is singular along a rational normal quartic. Its twelve
 \(\mathbf F_{11}\)-points form \(A_5/C_5\); the stabilizer quotient recovers
 the original six-axis carrier \(A_5/D_{10}\). The normalized outer action
-then gives an exact oriented round trip between a selected chordal line and
+then gives an exact chosen-sign round trip between a selected chordal line and
 the conference line. Without the selected line this is a residual double
 cover, not an equivalence.
 
 The recovered six-set also distinguishes the rank-five augmentation lattice
 from the rank-six \(D\)-type weight lattice while identifying their common
 binary heart. A uniform conference-saturation theorem explains the
-split/inert mod-eight residue dichotomy. In order six the normalized golden
+split/inert mod-eight residue dichotomy. In order six the normalized conference
 operator produces the unique nonsplit \(\mathbf F_4A_5\)-extension, and
-golden reversal becomes Frobenius. Thus the geometric and integral residual
-markings are the same \(C_2\)-torsor.
+global negation \(B\mapsto-B\) becomes Frobenius. Thus the
+global-negation torsor of opposite conference switching classes—not the
+distinct residual chordal-line torsor—is the Frobenius torsor.
 
 This paper belongs to the *Clebsch: Rigidity from Sparse Shadows* series.
-*Reconstructing the Clebsch code and its golden orientation from its deep-hole
-syndrome locus*, *Quadratic trade rigidity and cubic orientation in conic
-matching quotients*, and *Golden descent and operator realizations of the
-Clebsch cubic* supply concrete sources realizing the two cubic shadows.
-*Reconstructing PG(2,13), its conic, and polarity from the minimum words of a
-binary conic code* is an independent minimum-word reconstruction branch whose
+*Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus*,
+*Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients*,
+and *Hitchin's Icosahedral Incidence Double Cover and Operator Realizations of
+the Clebsch Cubic* supply concrete sources realizing the two cubic shadows.
+*Reconstructing \(\operatorname{PG}(2,13)\), its conic, and polarity from the
+minimum words of a binary conic code* is an independent minimum-word reconstruction branch whose
 residual marking follows the same Frobenius-orbit principle.
 
 ## Building and checking

@@ -60,11 +60,11 @@ marked six-axis carrier.  From the singular quartic we recover the constant
 double cover \(A_5/C_5\to\Omega=A_5/D_{10}\).  If either chordal line \(L\)
 of the invariant pencil is selected, we construct from the outer involution
 \(q\) mutually inverse reconstruction functors between a normalized chordal
-generator \(h\in L\) and an oriented conference generator \(c\), for neutral
-scalar extensions over every field extension of \(\F_{11}\).  Forgetting
+generator \(h\in L\) and a chosen-sign conference generator \(c\) over every
+neutral scalar extension of \(\F_{11}\).  Forgetting
 \(L\) is exactly the free quotient \((L,h,c)\mapsto(qL,-qh,c)\), which fixes
-\(c\): a residual \(C_2\)-torsor distinct from the conference-orientation
-torsor.
+\(c\): a residual \(C_2\)-torsor distinct from the global-negation torsor
+\(\{[B],[-B]\}\).
 
 We also prove an intrinsic six-point recognition criterion.  If a Seidel
 matrix \(S\) represents a two-graph \(\Delta\) on a six-set, with triple
@@ -81,8 +81,8 @@ algebra \(\F_2[\bar\varphi]\) it induces on \(D_n^\vee/2D_n^\vee\):
 \(\F_4\) for \(n\equiv6\pmod8\) and \(\F_2\times\F_2\) for
 \(n\equiv2\pmod8\).  At \(n=6\) the binary heart is the natural
 \(\F_4A_5\)-module \(H\); the map \([B]\mapsto\bar\varphi|_H\) identifies
-\(\{[B],[-B]\}\) with \(\{\omega,\omega^2\}\subset\F_4\), and conference
-reversal acts by Frobenius, an equivariant identification of principal
+\(\{[B],[-B]\}\) with \(\{\omega,\omega^2\}\subset\F_4\), and global
+negation acts by Frobenius, an equivariant identification of principal
 \(C_2\)-torsors.
 \end{abstract}
 
@@ -123,7 +123,7 @@ alone would leave after field extension.  The resulting categories are
 therefore honest metric groupoids, and their exact forgetful fibres can be
 computed.  Fourth, the same recovered six-set supports an integral
 root--weight normalization.  In order six, its residue is the natural
-\(\F_4A_5\)-heart, and outer reversal acts on it by Frobenius.
+\(\F_4A_5\)-heart, and transport by the outer normalizer acts on it by Frobenius.
 
 The conference object has a second intrinsic description on the recovered
 carrier.  If \(m(xy)\) is the signed defect of a pair, the number of aligned
@@ -214,15 +214,15 @@ equivalences
    \simeq \cC_{\mathrm{ch}}(K).
 \]
 
-Here the first groupoid consists of oriented order-six conference packages
-with a selected compatible chordal line, the second of the derived expanded
+Here the first groupoid consists of order-six conference packages with a
+chosen sign and a selected compatible chordal line, the second of the derived expanded
 metric carriers, and the third of normalized metric chordal shadows.  Under
 these equivalences:
 
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.4em]
 \item the singular quartic recovers a split degree-twelve scheme \(Z_5\) and
   a canonical stabilizer quotient \(Z_5\to\Omega_0\);
-\item the oriented conference generator is
+\item the chosen-sign conference generator is
 
   \[
                         c=8^{-1}(q_\Pi-1)h;
@@ -279,9 +279,10 @@ On the endomorphism field
 \[
                          \End_{A_5}(H)=\F_4,
 \]
-golden reversal \(B\mapsto-B\) and the outer normalizer both restrict to
-Frobenius.  Relative to the recovered six-set, the golden-orientation torsor
-and the exotic Frobenius torsor are therefore the same principal
+global negation exchanges \(\bar\varphi_B|_H\) and
+\(\bar\varphi_{-B}|_H\) by Frobenius, while transport by the outer normalizer
+induces Frobenius on \(\End_{A_5}(H)\).  Relative to the recovered six-set, the global-negation torsor
+and the Frobenius torsor \(\{\omega,\omega^2\}\) are therefore the same principal
 \(C_2\)-torsor.
 \end{theorem}
 
@@ -336,14 +337,13 @@ normalized metric chordal shadows in Theorem
 \end{center}
 
 The companion papers referred to below are \emph{Reconstructing the Clebsch
-code and its golden orientation from its deep-hole syndrome
-locus}~\cite{RuddRigidity2026}, whose source is the deep-hole conference
+Code from Its Deep-Hole Syndrome Locus}~\cite{RuddRigidity2026}, whose source is the deep-hole conference
 cubic; \emph{Quadratic trade rigidity and cubic orientation in conic matching
 quotients}~\cite{RuddFactorization2026}, whose matching quotient supplies the
-signed cubic moment used throughout; \emph{Golden descent and operator
-realizations of the Clebsch cubic}~\cite{RuddPassages2026}, the golden-descent
-conference source; and \emph{Reconstructing \(\operatorname{PG}(2,13)\), its
-conic, and polarity from the minimum words of a binary conic
+signed cubic moment used throughout; \emph{Hitchin's Icosahedral Incidence
+Double Cover and Operator Realizations of the Clebsch Cubic}~\cite{RuddPassages2026},
+the incidence-cover conference source; and \emph{Reconstructing
+\(\operatorname{PG}(2,13)\), its conic, and polarity from the minimum words of a binary conic
 code}~\cite{RuddPassant2026}, the independent minimum-word reconstruction.
 
 Section~\ref{sec:placement} gives the one matching-quotient placement calculation.
@@ -351,7 +351,7 @@ Sections~\ref{sec:singular} and \ref{sec:outer-companion} prove the special
 orbit and outer-difference bridge.  Section~\ref{sec:groupoids} upgrades the
 round trip to an intrinsic classification and computes its marking fibres.
 Section~\ref{sec:source-return} records the source-specific returns.
-Sections~\ref{sec:lattice-tower}--\ref{sec:golden-residue} prove the integral
+Sections~\ref{sec:lattice-tower}--\ref{sec:conference-residue} prove the integral
 normalization--residue theorem.  Section~\ref{sec:residual-markings} compares
 its \(C_2\)-rigidification with the separate \(C_3\)-rigidification of the
 minimum-word reconstruction \cite{RuddPassant2026}.
@@ -628,7 +628,7 @@ every scalar extension \(K/k\), proving the scheme statement.
 \end{proof}
 
 \begin{lemma}[The intrinsic conference pair]
-\label{lem:unoriented-conference-companion}
+\label{lem:conference-pair}
 The recovered \(G\)-set \(\Omega_0\cong A_5/D_{10}\) determines a unique
 unordered pair \(\{[B],[-B]\}\) of \(G\)-invariant order-six conference
 switching classes.  Coefficient normalization gives an unordered pair of
@@ -642,9 +642,9 @@ positive and two negative entries away from the first coordinate and its
 diagonal.  The negative entries therefore form a simple two-regular graph on
 five vertices, hence a pentagon.  All pentagons are relabelled copies of one
 another; complementing the pentagon gives the opposite switching class.
-The natural six-point \(A_5\)-action preserves this class, and its two
-orientations give opposite triangle cubics on the augmentation.  More
-precisely, the automorphism group of an oriented order-six conference class
+The natural six-point \(A_5\)-action preserves this class, and the two
+choices \([B]\) and \([-B]\) give opposite triangle cubics on the augmentation.
+More precisely, the automorphism group of either chosen order-six conference class
 is the transitive \(A_5\).  Identify it with the recovered
 \(G\leq S(\widehat X_M)\).  Two such identifications differ through
 \[
@@ -678,7 +678,7 @@ Then
 \]
 Consequently \(\Delta\) has no aligned four-set if and only if
 \(S^2=5I\).  Relative to the recovered \(A_5\)-action, the unordered pair
-of Lemma~\ref{lem:unoriented-conference-companion} is therefore the pair of
+of Lemma~\ref{lem:conference-pair} is therefore the pair of
 \(A_5\)-fixed two-graphs in the empty-alignment locus.
 \end{lemma}
 
@@ -730,7 +730,7 @@ the conference and chordal lines are distinct.  The point is causal: the
 conference pair was constructed from the recovered six-set, not inserted
 among the recognition axioms.
 
-\section{Outer difference and the oriented companion}
+\section{Outer difference and the chosen conference sign}
 \label{sec:outer-companion}
 
 The ordinary character of the augmentation module is
@@ -791,7 +791,7 @@ In the basis \(e_i-e_6\), its augmentation matrix is
  0&0&0&1&0
  \end{pmatrix}.
 \]
-Reversing the conference class changes every triangle sign, hence sends
+Global negation of the conference representative changes every triangle sign, hence sends
 \(c_B\) to \(-c_B\).  Proposition~\ref{prop:paper-ii-placement} identifies
 the matching-quotient line with the chordal line and fixes its pivot scalar.  Comparing one
 coefficient now makes the remaining scalar transparent.  With the monomial
@@ -884,7 +884,7 @@ unordered pair \(\{L,q_\Pi L\}\), but no one member of it.  Moreover
 \[
        (q_\Pi-1)(-q_\Pi h)=(q_\Pi-1)h.
 \]
-Thus \(h\) and \(-q_\Pi h\) have the same oriented conference companion.
+Thus \(h\) and \(-q_\Pi h\) have the same conference companion with chosen sign.
 This residual involution is the precise obstruction to an unselected
 equivalence.
 
@@ -938,9 +938,9 @@ For an extension \(K/k\), let:
   \ref{sec:outer-companion}, not an
   independent recognition axiom, and morphisms are metric normalizer
   morphisms carrying every displayed entry;
-\item \(\cC_{\mathrm{conf}}^L(K)\) be the groupoid of oriented order-six
+\item \(\cC_{\mathrm{conf}}^L(K)\) be the groupoid of order-six
   conference packages \((\Omega_0,[B],c)\), where \(c=c_B\) is the
-  coefficient-normalized actual triangle cubic attached to the oriented
+  coefficient-normalized actual triangle cubic attached to the chosen
   switching class \([B]\); replacing \([B]\) by \([-B]\) replaces \(c\) by
   \(-c\).  The package also includes a selected member
   \(L\) of the two-point chordal scheme of
@@ -971,9 +971,9 @@ are fully faithful and essentially surjective.
 Starting with a chordal shadow, Lemma
 \ref{lem:hankel-singular-locus} and Proposition~\ref{prop:special-orbit}
 recover \(R_h\), \(Z_5\), and \(\Omega_0\).  Lemma
-\ref{lem:unoriented-conference-companion} recovers the conference pair, and
+\ref{lem:conference-pair} recovers the conference pair, and
 the literal normalizer recovers \(q_\Pi\).  Proposition
-\ref{prop:outer-pencil-action} then identifies the normalized orientation
+\ref{prop:outer-pencil-action} then identifies the chosen normalized generator
 \[
                       c=8^{-1}(q_\Pi-1)h.
 \]
@@ -1051,14 +1051,14 @@ retained datum & forgetful fibre & sharpness action\\
 line \(L\), no scalar normalization & \(K^\times\) & scalar
   trivializations of \(L\)\\
 line \(L\), normalized generator & \(C_2\) & \(u:(h,c)\mapsto(-h,-c)\)\\
-oriented \(c\), no selected \(L\) & \(C_2\) & \(uq\)\\
+chosen conference sign \(c\), no selected \(L\) & \(C_2\) & \(uq\)\\
 unordered chordal and conference pairs & \(C_2\times C_2\) & \(u,q\)\\
 \bottomrule
 \end{tabular}
 \end{center}
 
-After \(L\) is fixed, sheet sign and conference orientation are not
-independent: \(8^{-1}(q_\Pi-1)\) identifies them.  The table therefore
+After \(L\) is fixed, the sheet sign and the choice between \(c\) and \(-c\)
+are not independent: \(8^{-1}(q_\Pi-1)\) identifies them.  The table therefore
 records a dependency lattice rather than four unrelated counts.
 
 \section{The source functors and their return}
@@ -1068,10 +1068,10 @@ We next state exactly what is returned to the three companion papers.  The
 matching-quotient bridge \cite{RuddFactorization2026} includes the normalized
 intertwiner \(T\) of Section~\ref{sec:placement}; its pivot \(3^{-1}\) is
 transported, not recomputed after relabeling.  The deep-hole and
-golden-descent conference sources
+incidence-cover conference sources
 \cite{RuddRigidity2026,RuddPassages2026} begin with a conference signing and
 add the choice of \(L\).  The chart lift, scale, outer/Petersen labels, and
-cross-identification of the golden-descent source \cite{RuddPassages2026}
+cross-identification of the incidence-cover source \cite{RuddPassages2026}
 remain bridge data rather than reconstructed outputs.
 
 \begin{corollary}[Source-by-source marked return]
@@ -1091,16 +1091,16 @@ output level.
 source & retained source output & target decoration & inverse returns\\
 \midrule
 deep-hole conference cubic \cite{RuddRigidity2026} & conference switching
-  class, axis carrier, orientation, and selected chordal line \(L\) & the
-  metric core & the same class, carrier, orientation, and \(L\), modulo
+  class, axis carrier, conference sign, and selected chordal line \(L\) & the
+  metric core & the same class, carrier, sign, and \(L\), modulo
   switching and relabeling\\
 matching-quotient cubic moment \cite{RuddFactorization2026} & five-isotypic
   projected tensor with chosen sheet sign, marked axes, and \(T\) &
   \(W_5,T\), and the fixed pivot & the same projected tensor, sheet sign,
   six-axis carrier, and \(T\)\\
-golden-descent conference cubic \cite{RuddPassages2026} & relative conference
+incidence-cover conference cubic \cite{RuddPassages2026} & relative conference
   source, selected \(L\), and full bridge datum &
-  \(\mathfrak m_{\mathrm{III}}\) & the same retained source, orientation,
+  \(\mathfrak m_{\mathrm{III}}\) & the same retained source, conference sign,
   \(L\), and bridge datum\\
 \bottomrule
 \end{tabular}
@@ -1109,10 +1109,10 @@ No inverse is asserted outside the declared retained output.
 \end{corollary}
 
 \begin{proof}
-The theorem \emph{Support cubic and golden continuation} and the corollary
+The theorem \emph{Support cubic and conference operator} and the corollary
 \emph{Nodes, symmetry, and integral commutant} of \cite{RuddRigidity2026}
-recover the conference signing, orientation, and axis carrier.  The
-proposition \emph{Relative marked orientation bridge} of
+recover the conference signing, its sign, and the axis carrier.  The
+proposition \emph{Marked comparison of the two sheets} of
 \cite{RuddPassages2026} supplies the same conference source relative to its
 fixed bridge datum.  Given \(L\), Corollary
 \ref{cor:selected-line-bridge} recovers the unique normalized \(h\in L\).
@@ -1205,7 +1205,7 @@ the same lattice.
 \section{Conference saturation}
 \label{sec:conference-saturation}
 
-We now prove the uniform lattice statement behind the golden specialization.
+We now prove the uniform lattice statement behind the order-six specialization.
 The closest classical analogue is Chapman's construction for skew conference
 matrices and imaginary quadratic orders \cite{Chapman2001}; the symmetric
 spectral setting is discussed by Haemers--Parsaei Majd
@@ -1261,10 +1261,10 @@ so \(\bar\varphi_B\) is neither zero nor the identity.  The split algebra
 therefore acts faithfully.
 \end{proof}
 
-\section{The golden residue}
-\label{sec:golden-residue}
+\section{The order-six conference residue}
+\label{sec:conference-residue}
 
-Specialize Theorem~\ref{thm:conference-saturation} to the oriented
+Specialize Theorem~\ref{thm:conference-saturation} to the chosen-sign
 order-six conference operator recovered above.  Put
 \[
  L^{\max}=D_6^\vee,\qquad \varphi=\frac{I+B}{2},\qquad
@@ -1300,7 +1300,7 @@ the signed permutation action,
  H=\left\{(0,x_1,\ldots,x_5):
                    \sum_{i=1}^5x_i=0\right\}.
 \]
-The oriented stabilizer commutes with \(B\), hence with \(\varphi\), so
+The stabilizer of the chosen class \([B]\) commutes with \(B\), hence with \(\varphi\), so
 \([G,M]\) is stable under \(\bar\varphi\).  It therefore has dimension two
 over \(\F_4\).
 The quotient is an \(\F_4\)-line, and \(G\) acts trivially because \(G\) is
@@ -1420,15 +1420,16 @@ with the characteristic-two block description recorded by Bleher
 \cite[\S3.3]{Bleher2002}.
 \end{proof}
 
-\begin{theorem}[Golden orientation becomes Frobenius]
-\label{thm:golden-frobenius}
+\begin{theorem}[Global negation becomes Frobenius]
+\label{thm:global-negation-frobenius}
 Restriction of \(\bar\varphi\) to \(H\) is one of the two primitive elements
 \(\omega,\omega^2\) of
 \[
                        \End_{\F_2G}(H)=\F_4.
 \]
-Reversing the conference orientation and applying the outer normalizer both
-exchange these elements by Frobenius.  Consequently there is a Cartesian
+Global negation \(B\mapsto-B\) exchanges these elements by Frobenius, and
+transport by the outer normalizer induces the same automorphism of the
+commutant.  Consequently there is a Cartesian
 square of principal \(C_2\)-torsors
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center),
@@ -1436,9 +1437,9 @@ square of principal \(C_2\)-torsors
 \node (gold) {\(\{[B],[-B]\}\)};
 \node[right=of gold] (field) {\(\{\omega,\omega^2\}\)};
 \node[below=of gold] (ugold)
-  {\(\{\substack{\text{unoriented}\\\text{conference class}}\}\)};
+  {\(\{\substack{\text{unordered opposite}\\\text{conference pair}}\}\)};
 \node[below=of field] (ufield)
-  {\(\{\substack{\text{unordered}\\\text{exotic class}}\}\)};
+  {\(\{\text{Frobenius orbit}\}\)};
 \draw[->] (gold) -- (field);
 \draw[->] (gold) -- (ugold);
 \draw[->] (field) -- (ufield);
@@ -1450,22 +1451,25 @@ relative to the recovered six-set.
 
 \begin{proof}
 The equation \(\bar\varphi^2+\bar\varphi+1=0\) makes its restriction to the
-simple heart primitive.  Reversal sends
+simple heart primitive.  Global negation sends
 \[
              B\longmapsto-B,\qquad
              \varphi\longmapsto1-\varphi,
 \]
-which reduces to \(\omega\mapsto1+\omega=\omega^2\).  The outer normalizer
-exchanges the two \(G\)-invariant conference orientations and therefore acts
-by the same involution.  Both vertical maps are principal \(C_2\)-torsors,
+which reduces to \(\omega\mapsto1+\omega=\omega^2\).  If \(P_q\) represents
+the outer normalizer, then
+\(P_qBP_q^{-1}=D(-B)D\) for a diagonal switching matrix \(D\).  Since
+\(D\equiv I\pmod2\), transport by \(q\) identifies the induced operator on
+the binary heart with the operator for \(-B\); conjugation by \(q\) therefore
+induces \(x\mapsto x^2\) on the commutant.  Both vertical maps are principal \(C_2\)-torsors,
 and the top map is equivariant and bijective, so the square is Cartesian.
 \end{proof}
 
 The lattice theorem and the modular extension theorem are classical in
 nearby but separate forms: Chapman treats the skew/imaginary conference
 analogue, while Bleher records the relevant uniserial block modules.  The
-role of Theorem~\ref{thm:golden-frobenius} is their composition with the
-orientation reconstructed in this paper.
+role of Theorem~\ref{thm:global-negation-frobenius} is their composition with the
+choice of conference sign reconstructed in this paper.
 
 \section{Residual Frobenius markings}
 \label{sec:residual-markings}
@@ -1497,7 +1501,7 @@ embeddings are permuted simply transitively by the Galois group.
 For the upper branch, Proposition~\ref{prop:commutator-heart} proves that
 \(H_{\Omega_0}\) has commutant \(\F_4\); its two constituents and the two
 primitive scalars form the \(C_2\)-torsor of
-Theorem~\ref{thm:golden-frobenius}.  The result \emph{The operator field} of
+Theorem~\ref{thm:global-negation-frobenius}.  The result \emph{The operator field} of
 \cite{RuddPassant2026} proves that its binary code is simple, becomes a
 multiplicity-free
 Frobenius orbit of three twelve-dimensional constituents, and has commutant
@@ -1563,7 +1567,7 @@ The chordal and conference cubics are geometrically distinct, but after a
 chordal line is selected they recover the same marked six-axis carrier.  The
 singular quartic of the chordal cubic recovers the constant double cover
 \(A_5/C_5\to A_5/D_{10}\), and the normalized outer difference gives mutually
-inverse reconstruction between a normalized chordal generator and an oriented
+inverse reconstruction between a normalized chordal generator and a chosen-sign
 conference generator.  Forgetting the selected chordal line is exactly the
 free \(C_2\)-quotient.  Thus the result identifies the source information
 retained by the two cubic shadows without identifying the two invariant cubic
@@ -1575,7 +1579,7 @@ the \(C_2\)-quotient above is the free action
 The recovered six-set also controls the integral normalization.  The
 rank-five augmentation and rank-six root--weight lattices remain distinct,
 while their common binary heart carries the \(\F_4\)-structure on which
-conference reversal is Frobenius.  Together these results determine both the
+global negation is Frobenius.  Together these results determine both the
 common marked carrier and the precise residual ambiguity left by the
 reconstruction.
 
@@ -1586,7 +1590,7 @@ reconstruction.
 \begin{tabular}{@{}r@{\hskip 1.4em}l@{}}
 {\scriptsize I}   & From deep holes, a form arises;\\
 {\scriptsize II}  & beneath it, paired chords turn true;\\
-{\scriptsize III} & through many veils, the golden thread runs;\\
+{\scriptsize III} & through paired veils, the two sheets exchange;\\
 {\scriptsize IV}  & from bare, whispered words, a plane rises;\\
 {\scriptsize V}   & \textbf{beneath one form, two shadows, a hidden twist between.}
 \end{tabular}
@@ -1605,7 +1609,7 @@ reconstruction.
 ]
 \node[paper]   (p1) at (0,1.9) {\textbf{I}\\deep-hole\\conference cubic};
 \node[paper]   (p2) at (0,0.35) {\textbf{II}\\matching-quotient\\cubic moment};
-\node[paper]   (p3) at (0,-1.2) {\textbf{III}\\golden-descent\\conference cubic};
+\node[paper]   (p3) at (0,-1.2) {\textbf{III}\\incidence cover\\conference cubic};
 \node[active]  (p5) at (5.5,0.35) {\textbf{V}\\marked cubic\\correspondence};
 \node[package] (gold) at (10.6,0.35) {one six-axis carrier\\conference \(+\) chordal};
 \node[paper]   (p4) at (0,-3.6) {\textbf{IV}\\minimum-word pairs};
@@ -1619,8 +1623,9 @@ reconstruction.
 \caption{Programme map.  The upper double arrows are Paper~V's marked
 transports and returns between the chordal and conference shadows; the right
 arrow is its common-carrier reconstruction.  The lower solid arrow is
-Paper~IV's independent minimum-word reconstruction.  Only the residual
-\(C_2\)- and Frobenius-orbit markings are compared across the two branches.}
+Paper~IV's independent minimum-word reconstruction.  Only the
+global-negation/\(\F_4\) torsor and Paper~IV's \(\F_8\) Frobenius-orbit
+marking are compared across the two branches; the chordal-line torsor is not.}
 \label{fig:programme-map}
 \end{figure}
 
@@ -1629,7 +1634,7 @@ correspondences and thematic relations, not proof dependencies.
 
 The scattered shadows gather on one carrier, but not by becoming equal.
 Papers~I and III reach the conference shadow from deep-hole and
-golden-descent data \cite{RuddRigidity2026,RuddPassages2026}; Paper~II reaches
+conference-source data \cite{RuddRigidity2026,RuddPassages2026}; Paper~II reaches
 the chordal shadow from matching-quotient data
 \cite{RuddFactorization2026}.  This paper shows that these distinct cubic
 shadows
@@ -1730,13 +1735,13 @@ quotients,
 
 \bibitem{RuddRigidity2026}
 T.~Rudd,
-\newblock Reconstructing the Clebsch code and its golden orientation from its
-deep-hole syndrome locus,
+\newblock Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus,
 \newblock preprint (2026).
 
 \bibitem{RuddPassages2026}
 T.~Rudd,
-\newblock Golden descent and operator realizations of the Clebsch cubic,
+\newblock Hitchin's Icosahedral Incidence Double Cover and Operator
+  Realizations of the Clebsch Cubic,
 \newblock preprint (2026).
 
 \bibitem{RuddPassant2026}
