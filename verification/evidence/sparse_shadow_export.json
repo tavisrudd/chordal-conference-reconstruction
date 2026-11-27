@@ -1,0 +1,542 @@
+{
+  "profile": {
+    "adapter": "paper_v_chordal_conference",
+    "input": {
+      "action": {
+        "degree": 6,
+        "generators": [
+          [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "kind": "vertex_permutations"
+      },
+      "ambiguity": {
+        "kind": "orientation_c2"
+      },
+      "base_field": {
+        "kind": "rational"
+      },
+      "chordal_cubic": [
+        0,
+        1,
+        1,
+        9,
+        9,
+        1,
+        2,
+        7,
+        2,
+        1,
+        2,
+        7,
+        9,
+        7,
+        9,
+        0,
+        9,
+        9,
+        1,
+        9,
+        7,
+        7,
+        9,
+        2,
+        1,
+        0,
+        1,
+        9,
+        1,
+        2,
+        9,
+        0,
+        1,
+        1,
+        0
+      ],
+      "chordal_singular_points": [
+        [
+          1,
+          0,
+          5,
+          4,
+          9
+        ],
+        [
+          1,
+          0,
+          9,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          9
+        ],
+        [
+          1,
+          3,
+          9,
+          0,
+          4
+        ],
+        [
+          1,
+          4,
+          3,
+          9,
+          5
+        ],
+        [
+          1,
+          4,
+          5,
+          0,
+          3
+        ],
+        [
+          1,
+          5,
+          0,
+          9,
+          4
+        ],
+        [
+          1,
+          5,
+          4,
+          3,
+          0
+        ],
+        [
+          1,
+          9,
+          0,
+          5,
+          3
+        ],
+        [
+          1,
+          9,
+          3,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          5,
+          3,
+          9
+        ],
+        [
+          0,
+          1,
+          9,
+          4,
+          5
+        ]
+      ],
+      "conference_cubic": [
+        0,
+        1,
+        1,
+        10,
+        10,
+        1,
+        2,
+        9,
+        2,
+        1,
+        2,
+        9,
+        10,
+        9,
+        10,
+        0,
+        10,
+        10,
+        1,
+        10,
+        9,
+        9,
+        10,
+        2,
+        1,
+        0,
+        1,
+        10,
+        1,
+        2,
+        10,
+        0,
+        1,
+        1,
+        0
+      ],
+      "conference_singular_points": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          6
+        ],
+        [
+          1,
+          1,
+          1,
+          6,
+          1
+        ],
+        [
+          1,
+          1,
+          6,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          6,
+          1,
+          1,
+          1
+        ]
+      ],
+      "delta_matrix": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ]
+      ],
+      "gate": {
+        "enabled": true,
+        "reason": "paper-owned sparse-shadow export frozen",
+        "required_export": "verification/evidence/sparse_shadow_export.json"
+      },
+      "minimality_collisions": [],
+      "odd_calibration": {
+        "name": "selected_chordal_line",
+        "support": [
+          0
+        ],
+        "value": 1
+      },
+      "outer_involution": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        2
+      ],
+      "recovered_carrier": "singular quartic, twelve points, six axes, and conference switching class",
+      "retained_residue": {
+        "action": "color_preserving_permutations",
+        "relations": [
+          {
+            "directed": false,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "name": "conference_positive"
+          },
+          {
+            "directed": false,
+            "edges": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "name": "conference_negative"
+          }
+        ],
+        "vertices": [
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          },
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          },
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          },
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          },
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          },
+          {
+            "color": 0,
+            "sign": 0,
+            "weight": 1
+          }
+        ]
+      },
+      "selected_chordal_line": 0,
+      "source": {
+        "artifact": "verification/evidence/conference_node_completeness.json",
+        "paper": "V",
+        "sha256": "2d3621207f01f0243d50b0a22d24d13add9f1e56c6a7a08129fb23f5376bcf4e",
+        "theorem": "carrier recovery and exact marked return"
+      },
+      "verification_field": {
+        "characteristic": 11,
+        "degree": 1,
+        "element_encoding": "least_nonnegative_residue",
+        "modulus_coefficients_low_to_high": []
+      }
+    }
+  },
+  "schema": "sparse-shadow/v1"
+}

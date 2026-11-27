@@ -1,8 +1,8 @@
 {
+  "content_sha256": "0b56d3fb5e368e00209028c842b0d2dde4e0aec6dce5b7e5a71cfd2c9f138928",
   "excluded_path_count": 0,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
-  "exporter_blob": "bc16a3f02957af1342e19dfe7fad78e003d8c5dc",
   "files": [
     {
       "bytes": 108,
@@ -31,7 +31,7 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 975,
+      "bytes": 1088,
       "mode": "100644",
       "path": "Makefile",
       "rewrites": [
@@ -67,43 +67,43 @@
         }
       ],
       "role": "support",
-      "sha256": "6e984527ddbc3edf4717aa290f63d4c09e5f130fc80ef2f86f865ab780c9e2ca",
-      "source_blob": "cf29e677ab034268abdcf750991cb34f1ec9fe5e"
+      "sha256": "b5887854813749955cd806a976874d6c41dbf3c3938cf4ab0be01b50116fb311",
+      "source_blob": "271dcb75e4481cc485461bf98409ea9c5aa411bc"
     },
     {
-      "bytes": 314,
+      "bytes": 519,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "bcb8884a70203c7fbd9214fe225b1c31235c63637a721d14a01f99ddfb9b9fad",
+      "sha256": "50c80c71e44c5b5616d72e582867c39e10aed91dcd5abe1bf6293b3774c3ab33",
       "source_blob": null
     },
     {
-      "bytes": 3145,
+      "bytes": 3138,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "2fc29f45e275d7bb4c540b5eeb23b9e5b2afb124cc84455c0cd4278317138c1a",
-      "source_blob": "449dc38717a3cb6d0ffecf1cc7dd4ffc43b60e15"
+      "sha256": "453eafbc92aa11d3847d68d89c1b0a72f90836bf744121b6dac31c0722182a67",
+      "source_blob": "1364eff5b0e24ba05f43bbe81b8ecc85d42bd83a"
     },
     {
-      "bytes": 189050,
+      "bytes": 190024,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "e4c9241191165ffd40c46cad5a80269c7be5364fa07c780bb85be9172c9272a9",
-      "source_blob": "641036b21c72a60e1093a22935d5f1ad8abf6828"
+      "sha256": "9086bc8d7432709aecc30ceecb69c1e2fb354ea6cc6ef60cf0038b2caaf33794",
+      "source_blob": "a712dc2a0ee8147d87744a20296c84032e6e5b78"
     },
     {
-      "bytes": 73507,
+      "bytes": 74081,
       "mode": "100644",
       "path": "chordal_conference_reconstruction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "c3069692598f2ac443e3cc6af3148002dc2b1114cc3aeff73e64b12154259367",
-      "source_blob": "adf9c354c6e9b84c73ed5afbea9e00b64ed6ed7e"
+      "sha256": "3efefa05a8e58584c9f21628c28ebb3b7dcf4a9c27b88c8a60663b01add06899",
+      "source_blob": "577d3c5de81c9e7e7dcae43d377dbcda9d5bdbe8"
     },
     {
       "bytes": 567,
@@ -311,6 +311,33 @@
       "role": "verification",
       "sha256": "30c605e06e9a32b688f55a25b369ca6c904771cdf2d594e8632744e546905a81",
       "source_blob": "9eadffb54f702d725fa8ec75b014f5a03662c4c3"
+    },
+    {
+      "bytes": 9292,
+      "mode": "100644",
+      "path": "verification/evidence/sparse_shadow_export.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "cdbc92f75e8778f534783d25aa5364d8e34e67818fc333a5f8624bf5868edf07",
+      "source_blob": "8d57c2cdf0aa3433c539ca8dfe13f53fa24df4c9"
+    },
+    {
+      "bytes": 6328,
+      "mode": "100644",
+      "path": "verification/generate_sparse_shadow_export.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "17f4fcf2dfe5a6e83bbe72f3811def2677a039405a5d5340a8027b128d79077b",
+      "source_blob": "670a5526e102ec04be42895b5dd0595474564dd9"
+    },
+    {
+      "bytes": 583,
+      "mode": "100644",
+      "path": "verification/sparse_shadow_export.sha256",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "8f2e9b079e6e93b879f0aa8225859a5fdd226c0ff23c1ddd70c3686fefa50f41",
+      "source_blob": "47a3ccf612f0adc983000ac6cd76531eb26737d8"
     }
   ],
   "github": "tavisrudd/chordal-conference-reconstruction",
@@ -318,13 +345,6 @@
     "chordal_conference_reconstruction.tex"
   ],
   "manifest_self_excluded": true,
-  "paper_ids": [
-    "chordal_conference_reconstruction"
-  ],
-  "paper_registry_sha256": "0f703cd3ebc2cce20cc63b62429557a98c57e4e77ccec4738e668d4f0066b550",
-  "release_output_policy": "legacy-unspecified",
   "repository": "chordal-conference-reconstruction",
-  "repository_map_sha256": "b58ac61c524b0f923124defdf01266eb9de73b50c8df8500e886e53fbfa37dfc",
-  "schema_version": 1,
-  "source_commit": "55f0f7fdbc17413545a0325db30506a356ab2801"
+  "schema_version": 1
 }

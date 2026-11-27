@@ -42,7 +42,7 @@
 \title{Chordal and Conference Cubics:\\
 Reconstruction and a Residual \(C_2\)-Torsor}
 \author{Tavis Rudd}
-\date{August 2026}
+\date{November 2026}
 
 \begin{document}
 \maketitle
@@ -56,8 +56,9 @@ its standard quadratic form.  The \(A_5\)-invariant cubic pencil in
 chordal cubics, each singular along a rational normal quartic; over
 \(\overline{\F}_{11}\) the conference cubic is not projectively isomorphic
 to either chordal cubic.  We prove that they nevertheless recover the same
-marked six-axis carrier.  From the singular quartic we recover the constant
-double cover \(A_5/C_5\to\Omega=A_5/D_{10}\).  If either chordal line \(L\)
+marked six-axis carrier.  From the singular quartic with its retained
+\(A_5\)-action we recover the constant double cover
+\(A_5/C_5\to\Omega=A_5/D_{10}\).  If either chordal line \(L\)
 of the invariant pencil is selected, we construct from the outer involution
 \(q\) mutually inverse reconstruction functors between a normalized chordal
 generator \(h\in L\) and a chosen-sign conference generator \(c\) over every
@@ -114,8 +115,8 @@ to its stabilizer produces the canonical quotient
 \[
               A_5/C_5\longrightarrow A_5/D_{10},
 \]
-and hence recovers the six-axis carrier.  Second, the nontrivial outer
-permutation of this six-set acts linearly on the invariant pencil.  Its
+and hence recovers the six-axis carrier.  Second, any permutation of this six-set in the
+nontrivial outer coset acts linearly on the invariant pencil.  Its
 difference from the identity carries either selected chordal line
 isomorphically onto the conference line.  Third, retaining the standard
 quadratic form on the augmentation removes the scalar inertia that a cubic
@@ -220,8 +221,9 @@ metric carriers, and the third of normalized metric chordal shadows.  Under
 these equivalences:
 
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.4em]
-\item the singular quartic recovers a split degree-twelve scheme \(Z_5\) and
-  a canonical stabilizer quotient \(Z_5\to\Omega_0\);
+\item the retained \(G\)-action on the singular quartic recovers a split
+  degree-twelve scheme \(Z_5\) and a canonical stabilizer quotient
+  \(Z_5\to\Omega_0\);
 \item the chosen-sign conference generator is
 
   \[
@@ -340,9 +342,9 @@ The companion papers referred to below are \emph{Reconstructing the Clebsch
 Code from Its Deep-Hole Syndrome Locus}~\cite{RuddRigidity2026}, whose source is the deep-hole conference
 cubic; \emph{Quadratic Trade Rigidity and Cubic Orientation in Conic Matching
 Quotients}~\cite{RuddFactorization2026}, whose matching quotient supplies the
-signed cubic moment used throughout; \emph{Hitchin's Icosahedral Incidence
-Double Cover and Operator Realizations of the Clebsch Cubic}~\cite{RuddPassages2026},
-the incidence-cover conference source; and \emph{Reconstructing
+signed cubic moment used throughout; \emph{The Clebsch Cubic: Hitchin's
+Icosahedral Double Cover and Conference-Matrix Rigidity}~\cite{RuddPassages2026},
+the incidence-cover conference pair; and \emph{Reconstructing
 \(\operatorname{PG}(2,13)\), its conic, and polarity from the minimum words of a binary conic
 code}~\cite{RuddPassant2026}, the independent minimum-word reconstruction.
 
@@ -358,8 +360,9 @@ minimum-word reconstruction \cite{RuddPassant2026}.
 
 \medskip
 \noindent\textbf{Scope and exact information loss.}
-The classification is intrinsic after fixing the literal quadratic
-augmentation carrier and concerns its neutral scalar extensions.  It does not
+The classification is intrinsic after fixing the literal metric
+\(G\)-carrier \((G,A_0,Q_0,\Pi)\) and concerns its neutral scalar extensions.
+It does not
 classify arbitrary twisted forms, identify the chordal and conference cubics,
 or manufacture source-local charts not retained in the bridge datum.  These
 boundaries record the information actually present in the shadows.  Likewise,
@@ -497,7 +500,7 @@ metric shadow, its special orbit, and its normalizer.  The exact replay named
 in Section~\ref{sec:verification} checks this normalization leaf
 independently, but no later theorem depends on a coefficient census.
 
-\section{The singular quartic recovers the axes}
+\section{The marked singular quartic recovers the axes}
 \label{sec:singular}
 
 \begin{lemma}[Singular locus of the Hankel determinant]
@@ -646,7 +649,7 @@ The natural six-point \(A_5\)-action preserves this class, and the two
 choices \([B]\) and \([-B]\) give opposite triangle cubics on the augmentation.
 More precisely, the automorphism group of either chosen order-six conference class
 is the transitive \(A_5\).  Identify it with the recovered
-\(G\leq S(\widehat X_M)\).  Two such identifications differ through
+\(G\leq S(\Omega_0)\).  Two such identifications differ through
 \[
  N_{S_6}(G)/G\cong C_2,
 \]
@@ -749,7 +752,7 @@ Maschke's theorem and the Reynolds idempotent show that this calculation
 commutes with every extension \(K/k\).
 
 The construction of the outer operator is linear, not merely projective.
-Let \(\tau\) be an involutive permutation in the nontrivial coset of
+Let \(\tau\) be a permutation in the nontrivial coset of
 \(N_{S(\Omega_0)}(G)/G\), and let \(P_\tau\) act on the literal augmentation
 \(A_0\).  If an abstract copy \(A\) of the five-dimensional module is in use
 and \(T:A\to A_0\) is any nonzero intertwiner, put
@@ -763,7 +766,9 @@ six-set.
 
 \begin{proposition}[Normalized outer action]
 \label{prop:outer-pencil-action}
-Let \(c_B\) be either coefficient-normalized conference generator and let
+Let \(c_B\) be the coefficient-normalized conference generator with
+\([x_0^2x_1]c_B=1\) in the monomial order \(\mathcal M\) of
+Proposition~\ref{prop:paper-ii-placement}, and let
 \(h\) be the coefficient-normalized matching-quotient chordal generator of
 Proposition~\ref{prop:paper-ii-placement}.  In the
 ordered basis \((c_B,h)\),
@@ -780,8 +785,8 @@ Definition~\ref{def:metric-chordal-shadow}.
 \end{proposition}
 
 \begin{proof}
-Take the literal odd permutation \((3\ 4\ 5\ 6)\) of the recovered six-set.
-In the basis \(e_i-e_6\), its augmentation matrix is
+Take the literal odd permutation \((3\ 4\ 5\ 6)\) of the recovered
+six-set, an element of \(N_{S(\Omega_0)}(G)\setminus G\).  In the basis \(e_i-e_6\), its augmentation matrix is
 \[
  Q=\begin{pmatrix}
  1&0&0&0&0\\
@@ -795,8 +800,8 @@ Global negation of the conference representative changes every triangle sign, he
 \(c_B\) to \(-c_B\).  Proposition~\ref{prop:paper-ii-placement} identifies
 the matching-quotient line with the chordal line and fixes its pivot scalar.  Comparing one
 coefficient now makes the remaining scalar transparent.  With the monomial
-order \(\mathcal M\) of Proposition~\ref{prop:paper-ii-placement}, coefficient
-normalization gives
+order \(\mathcal M\) of Proposition~\ref{prop:paper-ii-placement}, the choice of \(c_B\) and coefficient
+normalization give
 \[
  [x_0^2x_1]c_B=1,\qquad [x_0^2x_1]h=1,\qquad
  [x_0^2x_1]q_\Pi h=9.
@@ -808,7 +813,9 @@ formula.  The independence of the outer representative was proved above.
 
 \begin{lemma}[The two chordal lines]
 \label{lem:two-chordal-lines}
-Over \(\overline{k}\), the chordal-member subscheme of \(\PP(\Pi)\) consists
+Over \(\overline{k}\), the chordal-member subscheme of \(\PP(\Pi)\), that is,
+the scheme-theoretic intersection of \(\PP(\Pi)\) with the
+\(\PGL(A_0)\)-orbit of the secant cubic of a rational normal quartic, consists
 of exactly two reduced points,
 \[
                          [h],\qquad[q_\Pi h].
@@ -907,9 +914,11 @@ whose projectivization sends the six augmentation-frame points according to
 \(F_\#f=f\circ F^{-1}\).  The morphism must carry every retained line and
 actual tensor by \(F_\#\).  For a conference class it must also satisfy
 \[
-                    [P_\tau BP_\tau^{-1}]=[B'],
+                    [\varepsilon P_\tau BP_\tau^{-1}]=[B'],
 \]
-where brackets mean equivalence under diagonal switching
+where \(F=\varepsilon P_\tau\) with \(\varepsilon\in\{\pm1\}\): the frame
+condition makes \(P_\tau^{-1}F\) scalar and the metric makes it \(\pm1\).
+Brackets mean equivalence under diagonal switching
 \(B\sim DBD\), with
 \[
                   D\in\{\pm1\}^{\Omega_0}/\{\pm I\}.
@@ -1100,7 +1109,7 @@ matching-quotient cubic moment \cite{RuddFactorization2026} & five-isotypic
   six-axis carrier, and \(T\)\\
 incidence-cover conference cubic \cite{RuddPassages2026} & relative conference
   source, selected \(L\), and full bridge datum &
-  \(\mathfrak m_{\mathrm{III}}\) & the same retained source, conference sign,
+  its marking datum \(\mathfrak m\) & the same retained source, conference sign,
   \(L\), and bridge datum\\
 \bottomrule
 \end{tabular}
@@ -1565,8 +1574,9 @@ Theorem~\ref{thm:conference-saturation}, or Proposition
 
 The chordal and conference cubics are geometrically distinct, but after a
 chordal line is selected they recover the same marked six-axis carrier.  The
-singular quartic of the chordal cubic recovers the constant double cover
-\(A_5/C_5\to A_5/D_{10}\), and the normalized outer difference gives mutually
+singular quartic of the chordal cubic, with its retained \(A_5\)-action,
+recovers the constant double cover \(A_5/C_5\to A_5/D_{10}\), and the
+normalized outer difference gives mutually
 inverse reconstruction between a normalized chordal generator and a chosen-sign
 conference generator.  Forgetting the selected chordal line is exactly the
 free \(C_2\)-quotient.  Thus the result identifies the source information
@@ -1740,8 +1750,8 @@ T.~Rudd,
 
 \bibitem{RuddPassages2026}
 T.~Rudd,
-\newblock Hitchin's Icosahedral Incidence Double Cover and Operator
-  Realizations of the Clebsch Cubic,
+\newblock The Clebsch Cubic: Hitchin's Icosahedral Double Cover and
+  Conference-Matrix Rigidity,
 \newblock preprint (2026).
 
 \bibitem{RuddPassant2026}

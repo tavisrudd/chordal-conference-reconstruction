@@ -29,8 +29,8 @@ distinct residual chordal-line torsor—is the Frobenius torsor.
 This paper belongs to the *Clebsch: Rigidity from Sparse Shadows* series.
 *Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus*,
 *Quadratic Trade Rigidity and Cubic Orientation in Conic Matching Quotients*,
-and *Hitchin's Icosahedral Incidence Double Cover and Operator Realizations of
-the Clebsch Cubic* supply concrete sources realizing the two cubic shadows.
+and *The Clebsch Cubic: Hitchin's Icosahedral Double Cover and
+Conference-Matrix Rigidity* supply concrete sources realizing the two cubic shadows.
 *Reconstructing \(\operatorname{PG}(2,13)\), its conic, and polarity from the
 minimum words of a binary conic code* is an independent minimum-word reconstruction branch whose
 residual marking follows the same Frobenius-orbit principle.

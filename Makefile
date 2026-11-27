@@ -17,6 +17,7 @@ evidence:
 	$(PYTHON) verification/evidence/paper_ii_chordal_axis.py --check
 	$(PYTHON) verification/evidence/conference_node_completeness.py --check
 	$(PYTHON) verification/evidence/determinantal_presentation.py --check
+	$(PYTHON) verification/generate_sparse_shadow_export.py --check verification/evidence/sparse_shadow_export.json
 
 manuscript: $(SOURCE)
 	$(LATEXMK) $(LATEXMK_FLAGS) $(SOURCE)
